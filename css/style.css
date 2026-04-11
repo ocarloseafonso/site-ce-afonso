@@ -4,7 +4,7 @@
    ============================================ */
 
 /* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 /* --- CSS Variables --- */
 :root {
@@ -26,7 +26,7 @@
   --color-border-light: #222222;
   --color-success: #00E676;
   --color-star: #FFD600;
-  --font-heading: 'Bebas Neue', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-body: 'DM Sans', sans-serif;
   --max-width: 1240px;
   --header-height: 80px;
@@ -82,10 +82,10 @@ ul, ol { list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.25;
   color: var(--color-text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
@@ -545,11 +545,19 @@ p:last-child { margin-bottom: 0; }
   z-index: 0;
 }
 
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(13,13,13,0.85) 0%, rgba(13,13,13,0.4) 100%);
+  z-index: 1;
+}
+
 .hero-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.12;
+  opacity: 0.6;
 }
 
 .hero-badge {
@@ -1032,20 +1040,23 @@ p:last-child { margin-bottom: 0; }
 }
 
 .service-card {
-  background: var(--color-white);
-  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-border-light);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all var(--transition-base);
   text-decoration: none;
   display: block;
+  position: relative;
 }
 
 .service-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-6px);
-  border-color: transparent;
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5), 0 0 20px rgba(200,0,90,0.2);
 }
 
 .service-card-img {
@@ -1098,17 +1109,18 @@ p:last-child { margin-bottom: 0; }
 }
 
 .service-card-body h3 {
-  margin-bottom: 10px;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-text);
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -0.02em;
 }
 
 .service-card-body p {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  margin-bottom: 16px;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  line-height: 1.65;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;

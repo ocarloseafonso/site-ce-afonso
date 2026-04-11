@@ -1,0 +1,21 @@
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# AI/Assistant folders
+.gemini/
+
+# Backup/Temp
+Backup/
+esse.zip
+*.tmp
+*.bak
