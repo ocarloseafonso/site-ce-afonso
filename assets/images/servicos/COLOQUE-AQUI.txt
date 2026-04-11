@@ -1,0 +1,27 @@
+===========================================
+  COMO COLOCAR SUAS FOTOS AQUI
+===========================================
+. Miniaturas do Blog e Cards de Serviços (Página Inicial)
+Estes são os cards que mostram o resumo do serviço ou do artigo. Eles são mais largos.
+
+Proporção (Aspect Ratio): 16:9 (formato de cinema/YouTube)
+Tamanho Recomendado: 1200 x 675 pixels (ou 800 x 450px)
+
+Salve suas fotos com EXATAMENTE estes nomes:
+
+  box-braid.jpg
+  nago.jpg
+  twist.jpg
+  dreads.jpg
+  fulani-braid.jpg
+  trancas-cachos.jpg
+  penteados-infantis.jpg
+  cabelos-naturais.jpg
+  aplicacoes.jpg
+
+Tamanho recomendado: 600x400 pixels
+Formato: JPG ou PNG
+
+Basta salvar com o nome correto nesta pasta
+e substituir o arquivo existente.
+===========================================

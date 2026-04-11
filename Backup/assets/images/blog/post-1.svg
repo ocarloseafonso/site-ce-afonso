@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="400" viewBox="0 0 700 400">
+  <rect width="700" height="400" fill="#F5EDE0"/>
+  <rect x="2" y="2" width="696" height="396" fill="none" stroke="#803A5A" stroke-width="2" stroke-dasharray="8,4" rx="4" opacity="0.4"/>
+  <ellipse cx="350" cy="150" rx="42" ry="52" fill="#803A5A" opacity="0.7"/>
+  <rect x="336" y="192" width="28" height="22" rx="7" fill="#803A5A" opacity="0.7"/>
+  <ellipse cx="350" cy="225" rx="70" ry="26" fill="#803A5A" opacity="0.6"/>
+  <path d="M315 170 Q305 210 300 260 Q295 300 302 330" stroke="#803A5A" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M328 165 Q320 205 316 255 Q312 295 318 325" stroke="#803A5A" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M372 165 Q380 205 384 255 Q388 295 382 325" stroke="#803A5A" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M385 170 Q395 210 400 260 Q405 300 398 330" stroke="#803A5A" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="500" cy="180" r="35" fill="#803A5A" opacity="0.7"/>
+  <path d="M485 180 L495 190 L515 168" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="350" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#803A5A" font-weight="bold">COMO ESCOLHER UMA TRANCISTA</text>
+  <text x="350" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#803A5A" opacity="0.6">Substitua por foto real</text>
+  <text x="350" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#803A5A" opacity="0.4">700 x 400px</text>
+</svg>

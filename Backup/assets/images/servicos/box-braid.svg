@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#F8EFF3"/>
+  <rect x="2" y="2" width="596" height="396" fill="none" stroke="#803A5A" stroke-width="2" stroke-dasharray="8,4" rx="4" opacity="0.4"/>
+  <ellipse cx="300" cy="140" rx="45" ry="55" fill="#803A5A" opacity="0.7"/>
+  <rect x="285" y="185" width="30" height="25" rx="8" fill="#803A5A" opacity="0.7"/>
+  <ellipse cx="300" cy="220" rx="80" ry="30" fill="#803A5A" opacity="0.6"/>
+  <rect x="262" y="170" width="6" height="120" rx="3" fill="#542439" opacity="0.6" transform="rotate(-3,265,230)"/>
+  <rect x="272" y="165" width="6" height="130" rx="3" fill="#542439" opacity="0.6" transform="rotate(-1,275,230)"/>
+  <rect x="282" y="162" width="6" height="135" rx="3" fill="#542439" opacity="0.6"/>
+  <rect x="292" y="160" width="6" height="140" rx="3" fill="#542439" opacity="0.6"/>
+  <rect x="302" y="160" width="6" height="140" rx="3" fill="#542439" opacity="0.6"/>
+  <rect x="312" y="162" width="6" height="135" rx="3" fill="#542439" opacity="0.6"/>
+  <rect x="322" y="165" width="6" height="130" rx="3" fill="#542439" opacity="0.6" transform="rotate(1,325,230)"/>
+  <rect x="332" y="170" width="6" height="120" rx="3" fill="#542439" opacity="0.6" transform="rotate(3,335,230)"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#803A5A" font-weight="bold">BOX BRAID</text>
+  <text x="300" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#803A5A" opacity="0.6">Substitua por foto real</text>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#803A5A" opacity="0.4">600 x 400px</text>
+</svg>

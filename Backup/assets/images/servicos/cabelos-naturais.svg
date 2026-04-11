@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#F8EFF3"/>
+  <rect x="2" y="2" width="596" height="396" fill="none" stroke="#803A5A" stroke-width="2" stroke-dasharray="8,4" rx="4" opacity="0.4"/>
+  <ellipse cx="300" cy="130" rx="90" ry="85" fill="#803A5A" opacity="0.7"/>
+  <ellipse cx="300" cy="150" rx="45" ry="55" fill="#803A5A" opacity="0.8"/>
+  <circle cx="240" cy="100" r="8" fill="#542439" opacity="0.6"/>
+  <circle cx="260" cy="80" r="10" fill="#542439" opacity="0.6"/>
+  <circle cx="290" cy="70" r="12" fill="#542439" opacity="0.6"/>
+  <circle cx="320" cy="72" r="11" fill="#542439" opacity="0.6"/>
+  <circle cx="350" cy="85" r="9" fill="#542439" opacity="0.6"/>
+  <circle cx="365" cy="105" r="8" fill="#542439" opacity="0.6"/>
+  <circle cx="230" cy="120" r="7" fill="#542439" opacity="0.6"/>
+  <circle cx="375" cy="125" r="7" fill="#542439" opacity="0.6"/>
+  <rect x="285" y="195" width="30" height="25" rx="8" fill="#803A5A" opacity="0.7"/>
+  <ellipse cx="300" cy="235" rx="80" ry="30" fill="#803A5A" opacity="0.6"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#803A5A" font-weight="bold">CABELOS NATURAIS</text>
+  <text x="300" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#803A5A" opacity="0.6">Substitua por foto real</text>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#803A5A" opacity="0.4">600 x 400px</text>
+</svg>

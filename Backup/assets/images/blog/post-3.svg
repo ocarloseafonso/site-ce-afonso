@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="400" viewBox="0 0 700 400">
+  <rect width="700" height="400" fill="#F5EDE0"/>
+  <rect x="2" y="2" width="696" height="396" fill="none" stroke="#803A5A" stroke-width="2" stroke-dasharray="8,4" rx="4" opacity="0.4"/>
+  <path d="M350 200 Q310 160 280 180 Q250 200 270 230 Q290 260 350 300 Q410 260 430 230 Q450 200 420 180 Q390 160 350 200Z" fill="#803A5A" opacity="0.7"/>
+  <circle cx="250" cy="140" r="6" fill="#C49B6A" opacity="0.8"/>
+  <circle cx="450" cy="140" r="6" fill="#C49B6A" opacity="0.8"/>
+  <circle cx="200" cy="200" r="4" fill="#C49B6A" opacity="0.7"/>
+  <circle cx="500" cy="200" r="4" fill="#C49B6A" opacity="0.7"/>
+  <circle cx="280" cy="120" r="3" fill="#C49B6A" opacity="0.6"/>
+  <circle cx="420" cy="120" r="3" fill="#C49B6A" opacity="0.6"/>
+  <text x="350" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#803A5A" font-weight="bold">COMO CUIDAR DAS TRANÇAS</text>
+  <text x="350" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#803A5A" opacity="0.6">Substitua por foto real</text>
+  <text x="350" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#803A5A" opacity="0.4">700 x 400px</text>
+</svg>

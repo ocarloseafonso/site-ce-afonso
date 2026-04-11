@@ -1,0 +1,4 @@
+COLOQUE SUA FOTO AQUI COM ESTE NOME: favicon.png
+
+Tamanho recomendado: 32x32 pixels
+Formato: PNG ou ICO

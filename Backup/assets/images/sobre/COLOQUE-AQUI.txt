@@ -1,0 +1,16 @@
+===========================================
+COMO COLOCAR AS FOTOS DA PÁGINA "SOBRE"
+===========================================
+
+Você precisa colocar DUAS fotos nesta pasta com EXATAMENTE estes nomes:
+
+1. comunidade.png (ou comunidade.jpg)
+   - Esta é a foto da equipe/salão que aparece na seção "Quem Somos".
+   - Tamanho recomendado: 700x500 pixels (paisagem/retangular).
+
+2. especialista.png (ou especialista.jpg)
+   - Esta é a foto que aparece na seção "Quem é a Especialista".
+   - Tamanho recomendado: 500x500 ou 600x600 pixels (quadrada fica ótima).
+
+Basta copiar/salvar suas fotos aqui substituindo as imagens placeholders atuais.
+===========================================

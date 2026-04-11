@@ -1,0 +1,6 @@
+COLOQUE SUA FOTO AQUI COM ESTE NOME: logo.png
+
+Tamanho recomendado: 200x60 pixels
+Formato: PNG ou SVG
+
+Basta salvar sua foto com o nome "logo.png" nesta pasta e substituir o arquivo existente.

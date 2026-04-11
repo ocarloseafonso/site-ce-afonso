@@ -1,0 +1,17 @@
+===========================================
+  COMO COLOCAR SUAS FOTOS AQUI (GALERIA BOX BRAID)
+===========================================
+
+Salve suas fotos com EXATAMENTE estes nomes:
+
+  1.jpg
+  2.jpg
+  3.jpg
+
+(Você pode adicionar mais fotos se copiar o código HTML dos slides)
+
+Formato: JPG ou PNG
+Tamanho recomendado: Imagens em formato paisagem (ex: 800x600 pixels)
+
+Basta salvar com o nome correto nesta pasta e a galeria já vai exibir as imagens.
+===========================================

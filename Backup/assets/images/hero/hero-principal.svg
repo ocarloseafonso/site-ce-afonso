@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+  <rect width="1400" height="800" fill="#803A5A"/>
+  <rect width="1400" height="800" fill="url(#glow)"/>
+  <defs>
+    <radialGradient id="glow" cx="70%" cy="35%" r="45%">
+      <stop offset="0%" style="stop-color:#C49B6A;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="150" r="120" fill="none" stroke="#C49B6A" stroke-width="2" opacity="0.3"/>
+  <circle cx="200" cy="150" r="80" fill="none" stroke="#C49B6A" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="1200" cy="650" r="150" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.15"/>
+  <circle cx="1200" cy="650" r="100" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.1"/>
+  <ellipse cx="700" cy="280" rx="75" ry="95" fill="#FFFFFF" opacity="0.15"/>
+  <rect x="675" y="360" width="50" height="40" rx="10" fill="#FFFFFF" opacity="0.12"/>
+  <ellipse cx="700" cy="420" rx="120" ry="50" fill="#FFFFFF" opacity="0.1"/>
+  <path d="M640 320 Q620 400 600 500 Q580 580 590 650" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M655 310 Q640 390 625 480 Q610 560 615 640" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M670 300 Q660 380 650 470 Q640 550 645 630" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M685 295 Q680 375 675 465 Q670 545 675 625" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M700 290 Q700 370 700 460 Q700 540 700 620" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M715 295 Q720 375 725 465 Q730 545 725 625" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M730 300 Q740 380 750 470 Q760 550 755 630" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M745 310 Q760 390 775 480 Q790 560 785 640" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M760 320 Q780 400 800 500 Q820 580 810 650" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <text x="700" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.5)" font-weight="bold" letter-spacing="2">FOTO HERO - MULHER NEGRA COM TRANÇAS</text>
+  <text x="700" y="750" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">Substitua por foto real 1400x800px</text>
+</svg>

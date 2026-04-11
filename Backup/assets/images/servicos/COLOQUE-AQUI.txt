@@ -1,0 +1,22 @@
+===========================================
+  COMO COLOCAR SUAS FOTOS AQUI
+===========================================
+
+Salve suas fotos com EXATAMENTE estes nomes:
+
+  box-braid.jpg
+  nago.jpg
+  twist.jpg
+  dreads.jpg
+  fulani-braid.jpg
+  trancas-cachos.jpg
+  penteados-infantis.jpg
+  cabelos-naturais.jpg
+  aplicacoes.jpg
+
+Tamanho recomendado: 600x400 pixels
+Formato: JPG ou PNG
+
+Basta salvar com o nome correto nesta pasta
+e substituir o arquivo existente.
+===========================================

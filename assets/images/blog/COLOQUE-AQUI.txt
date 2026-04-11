@@ -1,0 +1,16 @@
+===========================================
+  COMO COLOCAR SUAS FOTOS AQUI
+===========================================
+
+Salve suas fotos com EXATAMENTE estes nomes:
+
+  post-1.jpg
+  post-2.jpg
+  post-3.jpg
+
+Tamanho recomendado: 700x400 pixels
+Formato: JPG ou PNG
+
+Basta salvar com o nome correto nesta pasta
+e substituir o arquivo existente.
+===========================================
