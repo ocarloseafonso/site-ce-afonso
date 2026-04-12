@@ -19,3 +19,21 @@ Backup/
 esse.zip
 *.tmp
 *.bak
+
+# Scripts de desenvolvimento local (nao precisam ir pro servidor)
+*.py
+*.bat
+server.py
+standardize_site.py
+fix_*.py
+clean_svg.py
+force_webp.py
+match_servicos.py
+optimize_images.py
+restore_logo.py
+resync_servicos.py
+fix_paths.py
+fix_related.py
+fix_urls.py
+atualizar_imagens.bat
+abrir_site.bat
