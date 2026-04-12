@@ -903,6 +903,10 @@ p:last-child { margin-bottom: 0; }
   text-decoration: underline;
 }
 
+.service-detail-card .btn {
+  color: var(--color-white) !important;
+}
+
 @media (max-width: 900px) {
   .service-detail-grid {
     grid-template-columns: 1fr;
