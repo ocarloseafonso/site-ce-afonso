@@ -20,9 +20,11 @@ esse.zip
 *.tmp
 *.bak
 
-# Scripts de desenvolvimento local (nao precisam ir pro servidor)
-*.py
-*.bat
+# Scripts de desenvolvimento local (Deixaremos rastreados para consistencia)
+# *.py
+# *.bat
+
+# Mas ignoramos arquivos especificos de teste ou temporarios
 server.py
 standardize_site.py
 fix_*.py

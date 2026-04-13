@@ -1,5 +1,5 @@
 /* ============================================
-   ATILIÊ DK - SALÃO AFRO
+   C.E. AFONSO SOLUÇÕES DIGITAIS
    JavaScript Principal
    ============================================ */
 
@@ -357,8 +357,8 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.cookieconsent) {
     window.cookieconsent.initialise({
       palette: {
-        popup: { background: "#1a1a1a", text: "rgba(255,255,255,0.85)" },
-        button: { background: "#C89770", text: "#fff" }
+        popup: { background: "#0D0D0D", text: "rgba(255,255,255,0.85)" },
+        button: { background: "#C8005A", text: "#fff" }
       },
       theme: "classic",
       position: "bottom",
@@ -366,9 +366,9 @@ document.addEventListener('DOMContentLoaded', function () {
       type: "info",
       content: {
         message: "Utilizamos cookies para melhorar sua experiência e analisar o tráfego do site. Ao continuar navegando, você concorda com nossa política de privacidade.",
-        dismiss: "Entendi",
+        dismiss: "Aceitar e Continuar",
         link: "Política de Privacidade",
-        href: "privacy.html",
+        href: "privacy",
         policy: "Política de Cookies"
       }
     });
