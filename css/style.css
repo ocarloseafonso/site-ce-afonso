@@ -2246,7 +2246,7 @@ p:last-child { margin-bottom: 0; }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  grid-template-columns: 2fr 1fr 1.5fr;
   gap: 48px;
   padding-bottom: 48px;
 }
