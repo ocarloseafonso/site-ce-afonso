@@ -155,19 +155,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     switch (pageType) {
       case 'home':
-        message = 'Olá! Gostaria de saber mais sobre o Método PART.';
+        message = 'Olá! Gostaria de saber mais sobre o Protocolo de Destaque Local (PDL).';
         break;
       case 'sobre':
         message = 'Olá! Gostaria de conhecer mais sobre a C.E. Afonso Soluções Digitais.';
         break;
       case 'servicos':
-        message = 'Olá! Gostaria de saber mais sobre os pilares do Método PART.';
+        message = 'Olá! Gostaria de saber mais sobre os pilares do Protocolo de Destaque Local (PDL).';
         break;
       case 'blog':
         message = 'Olá! Vi o blog da C.E. Afonso e gostaria de tirar uma dúvida.';
         break;
       case 'faq':
-        message = 'Olá! Tenho uma dúvida sobre o Método PART.';
+        message = 'Olá! Tenho uma dúvida sobre o Protocolo de Destaque Local (PDL).';
         break;
       case 'contato':
         message = 'Olá! Gostaria de uma consultoria estratégica para o meu negócio.';
