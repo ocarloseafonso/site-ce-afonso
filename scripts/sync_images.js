@@ -51,7 +51,10 @@ function syncImages() {
     }
 
     // 3. Processar arquivos HTML
-    const htmlFiles = fs.readdirSync(ROOT_DIR).filter(f => f.endsWith('.html'));
+    const rootFiles = fs.readdirSync(ROOT_DIR).filter(f => f.endsWith('.html'));
+    const blogHtmlDir = path.join(ROOT_DIR, 'blog');
+    const blogFiles = fs.existsSync(blogHtmlDir) ? fs.readdirSync(blogHtmlDir).filter(f => f.endsWith('.html')).map(f => path.join('blog', f)) : [];
+    const htmlFiles = [...rootFiles, ...blogFiles];
 
     htmlFiles.forEach(file => {
         const filePath = path.join(ROOT_DIR, file);
@@ -163,8 +166,11 @@ function syncImages() {
         if (content.includes('data-page="blog"') && content.includes('<div class="post-content">') && file !== 'blog.html') {
             // Se já tem a imagem, ignora ou atualiza
             if (!content.includes('class="post-featured-image"')) {
+const isInsideBlog = file.startsWith('blog\\') || file.startsWith('blog/');
+                const imgPrefix = isInsideBlog ? '../assets/images/blog/' : 'assets/images/blog/';
+                
                 if (targetImage) {
-                    const imgHtml = `\n        <div class="post-featured-image" style="margin-bottom: 32px; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);"><img src="assets/images/blog/${targetImage}" alt="${normalizedPageTitle}" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;"></div>`;
+                    const imgHtml = `\n        <div class="post-featured-image" style="margin-bottom: 32px; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);"><img src="${imgPrefix}${targetImage}" alt="${normalizedPageTitle}" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;"></div>`;
                     
                     // Inserir APÓS a post-meta-bar
                     content = content.replace(/(<div class="post-meta-bar">[\s\S]*?<\/div>)/, `$1${imgHtml}`);
@@ -178,7 +184,9 @@ function syncImages() {
                     const currentFile = path.basename(currentSrc);
                     if (currentFile !== targetImage) {
                         modified = true;
-                        return `${prefix}assets/images/blog/${targetImage}${suffix}`;
+                        const isInsideBlog = file.startsWith('blog\\') || file.startsWith('blog/');
+                        const imgPrefix = isInsideBlog ? '../assets/images/blog/' : 'assets/images/blog/';
+                        return `${prefix}${imgPrefix}${targetImage}${suffix}`;
                     }
                     return match;
                 });
