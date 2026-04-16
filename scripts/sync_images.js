@@ -204,6 +204,18 @@ const isInsideBlog = file.startsWith('blog\\') || file.startsWith('blog/');
             }
         }
 
+        
+        // --- LÓGICA 5: FEED DO BLOG NA HOME ---
+        if (relatedPostsHtml && file === 'index.html') {
+            const indexBlogRegex = /(<span class="section-label">BLOG<\/span>[\s\S]*?<div class="blog-grid">)([\s\S]*?)(<\/div>\s*<div class="text-center mt-4">)/;
+            const matchIndex = content.match(indexBlogRegex);
+            if (matchIndex && matchIndex[2].trim() !== relatedPostsHtml.trim()) {
+                content = content.replace(indexBlogRegex, `$1\n        ${relatedPostsHtml}\n      $3`);
+                console.log(`[${file}] Feed do Blog atualizado com posts reais.`);
+                modified = true;
+            }
+        }
+
         if (modified) fs.writeFileSync(filePath, content, 'utf8');
     });
 
