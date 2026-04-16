@@ -1,4 +1,4 @@
-# Guia de Imagens - Ateliê DK
+# Guia de Imagens - C.E. Afonso
 
 ## Como Substituir as Imagens
 

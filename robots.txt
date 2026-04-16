@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /cgi-bin/
 
-Sitemap: https://atelierdk.com.br/sitemap.xml
+Sitemap: https://ceafonso.com.br/sitemap.xml

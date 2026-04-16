@@ -19,7 +19,7 @@ function normalize(str) {
 
 function syncImages() {
     console.log('====================================================');
-    console.log('   Sincronização Ateliê DK - V4 (Animação e Blog)   ');
+    console.log('   Sincronização C.E. Afonso - V4 (Animação e Blog)   ');
     console.log('====================================================\n');
 
     // 1. Mapear blog para o Smart Match

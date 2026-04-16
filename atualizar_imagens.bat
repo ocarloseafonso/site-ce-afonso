@@ -1,7 +1,7 @@
 @echo off
 setlocal
 echo ====================================================
-echo    Ferramenta de Sincronização - Ateliê DK
+echo    Ferramenta de Sincronização - C.E. Afonso
 echo ====================================================
 echo.
 echo Verificando Node.js...
