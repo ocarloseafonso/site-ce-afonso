@@ -2,5 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /cgi-bin/
+Disallow: /scripts/
+Disallow: /Backup/
 
-Sitemap: https://ceafonso.com.br/sitemap.xml
+Sitemap: https://www.ceafonso.com.br/sitemap.xml
