@@ -13,140 +13,122 @@
   <meta property="og:url" content="https://www.ceafonso.com.br/gestao-google-meu-negocio">
   <meta property="og:locale" content="pt_BR">
   <meta name="robots" content="index, follow">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="assets/images/logo/favicon.png?v=5">
   <link rel="shortcut icon" href="assets/images/logo/favicon.png?v=5">
-  <link rel="stylesheet" href="css/style.css?v=12">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Gestão Contínua de Google Meu Negócio",
-    "provider": {
-      "@type": "Organization",
-      "name": "C.E. Afonso Soluções Digitais",
-      "url": "https://www.ceafonso.com.br"
-    },
-    "serviceType": "Gestão e Manutenção de SEO Local",
-    "areaServed": "Brasil",
-    "description": "Serviço mensal de acompanhamento, publicações estratégicas, resposta técnica a avaliações e blindagem de posição no Google Maps."
-  }
-  </script>
+  <link rel="stylesheet" href="css/pdl-landing.css?v=2">
+  <style>
+    :root {
+      --color-primary: #00B074;
+      --color-primary-dark: #008858;
+      --color-primary-darker: #00603E;
+      --color-primary-light: #26D094;
+      --color-primary-ultra-light: rgba(0, 176, 116, 0.1);
+      --color-primary-ghost: rgba(0, 176, 116, 0.05);
+      --shadow-glow: 0 0 40px rgba(0, 176, 116, 0.25);
+    }
+  </style>
 </head>
 <body data-page="gmn-gestao">
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo"><img src="assets/images/logo/logo-original.webp?v=4" alt="C.E. Afonso Soluções Digitais" width="160" height="48"></a>
-      <nav class="nav" role="navigation" aria-label="Menu principal">
-        <a href="/" class="nav-link">Início</a>
-        <a href="sobre" class="nav-link">Sobre</a>
-        <a href="servicos" class="nav-link active">Serviços</a>
-        <a href="blog" class="nav-link">Blog</a>
-        <a href="faq" class="nav-link">FAQ</a>
-        <a href="contato" class="nav-link">Contato</a>
-        <a href="https://wa.me/5524992074661" class="btn btn-primary btn-sm header-cta" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
-      </nav>
-      <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+
+  <!-- ===== HEADER SIMPLIFICADO ===== -->
+  <header class="lp-header" id="lp-header">
+    <div class="lp-header-inner">
+      <a href="/" class="lp-logo" aria-label="Ir para o site principal">
+        <img src="assets/images/logo/logo-original.webp" alt="C.E. Afonso Soluções Digitais" width="150" height="48">
+      </a>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="servicos" class="lp-header-back">Serviços</a>
+        <a href="/" class="lp-header-back" id="btn-voltar-site">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+          Ir para o site
+        </a>
+      </div>
     </div>
-    <div class="nav-overlay"></div>
   </header>
 
   <!-- HERO SECTION -->
-  <section class="lp-hero">
+  <section class="lp-hero" id="hero">
     <div class="container lp-hero-content">
-      <span class="lp-badge">MANUTENÇÃO E CRESCIMENTO CONTÍNUO</span>
-      <h1 class="lp-title">Gestão e Monitoramento Técnico para Sustentar o Ranqueamento do Seu Perfil no Google</h1>
-      <p class="lp-subtitle">Executamos a manutenção mensal contínua do Perfil da sua Empresa no Google: atualização de produtos/serviços, gestão de reputação, auditoria contra alterações indevidas e relatórios de métricas de intenção comercial.</p>
-      <div class="lp-ctas">
-        <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Gest%C3%A3o%20Mensal%20do%20Perfil%20no%20Google." class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Solicitar Proposta de Gestão</a>
-        <a href="#atividades" class="btn btn-outline btn-lg" style="border-color:#fff; color:#fff;">Ver Escopo Operacional</a>
+      <div class="lp-badge-row fade-up">
+        <span class="lp-badge">MANUTENÇÃO E CRESCIMENTO CONTÍNUO</span>
+      </div>
+      <h1 class="fade-up">Gestão e Monitoramento Técnico para <span>Sustentar o Ranqueamento no Google</span></h1>
+      <p class="lp-hero-sub fade-up">Executamos a manutenção mensal contínua do Perfil da sua Empresa no Google: atualização de produtos/serviços, gestão de reputação, auditoria contra alterações indevidas e relatórios de métricas de intenção comercial.</p>
+      <div class="lp-cta-group fade-up">
+        <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Gest%C3%A3o%20Mensal%20do%20Perfil%20no%20Google." class="btn-lp btn-lp-primary btn-lp-pulse" target="_blank" rel="noopener noreferrer" id="cta-hero">→ Solicitar Proposta de Gestão</a>
       </div>
     </div>
   </section>
 
   <!-- SEÇÃO DE DADOS DE MERCADO COM FONTES -->
-  <section class="lp-section" style="background: var(--color-bg-alt);">
+  <section class="lp-section lp-section-alt" id="dados">
     <div class="container">
       <div class="lp-section-title fade-up">
         <span class="lp-label">Importância da Gestão Contínua</span>
         <h2>Por que a manutenção ativa do Perfil no Google é indispensável</h2>
       </div>
 
-      <div class="lp-stats-grid fade-up" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
-        <div class="lp-stat-card" style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 32px 20px; text-align: center;">
-          <div class="lp-stat-number" style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 800; color: var(--color-primary); margin-bottom: 8px;"><span class="lp-counter" data-target="270">0</span>%</div>
-          <div class="lp-stat-label" style="font-size: 0.9rem; color: var(--color-text-body); line-height: 1.5;">mais chances de transmitir confiança ao consumidor quando o perfil é mantido completo e atualizado</div>
-          <span class="lp-stat-source" style="display: block; font-size: 0.75rem; color: var(--color-text-muted); margin-top: 8px;">Fonte: Google Business Profile Study 2026</span>
+      <div class="lp-stats-grid fade-up">
+        <div class="lp-stat-card">
+          <div class="lp-stat-number"><span class="lp-counter" data-target="270">0</span>%</div>
+          <div class="lp-stat-label">mais chances de transmitir confiança ao consumidor quando o perfil é mantido completo e atualizado</div>
+          <span class="lp-stat-source">Fonte: Google Business Profile Study 2026</span>
         </div>
-        <div class="lp-stat-card" style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 32px 20px; text-align: center;">
-          <div class="lp-stat-number" style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 800; color: var(--color-primary); margin-bottom: 8px;"><span class="lp-counter" data-target="70">0</span>%</div>
-          <div class="lp-stat-label" style="font-size: 0.9rem; color: var(--color-text-body); line-height: 1.5;">aumento médio nas visitas presenciais impulsionado por fichas ativas com publicações e fotos consistentes</div>
-          <span class="lp-stat-source" style="display: block; font-size: 0.75rem; color: var(--color-text-muted); margin-top: 8px;">Fonte: Google Insights 2026</span>
+        <div class="lp-stat-card">
+          <div class="lp-stat-number"><span class="lp-counter" data-target="70">0</span>%</div>
+          <div class="lp-stat-label">aumento médio nas visitas presenciais impulsionado por fichas ativas com publicações e fotos consistentes</div>
+          <span class="lp-stat-source">Fonte: Google Insights 2026</span>
         </div>
-        <div class="lp-stat-card" style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 32px 20px; text-align: center;">
-          <div class="lp-stat-number" style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 800; color: var(--color-primary); margin-bottom: 8px;"><span class="lp-counter" data-target="42">0</span>%</div>
-          <div class="lp-stat-label" style="font-size: 0.9rem; color: var(--color-text-body); line-height: 1.5;">dos cliques em buscas locais concentram-se estritamente no bloco de mapa das 3 primeiras fichas</div>
-          <span class="lp-stat-source" style="display: block; font-size: 0.75rem; color: var(--color-text-muted); margin-top: 8px;">Fonte: Moz Local Search Factors 2026</span>
+        <div class="lp-stat-card">
+          <div class="lp-stat-number"><span class="lp-counter" data-target="42">0</span>%</div>
+          <div class="lp-stat-label">dos cliques em buscas locais concentram-se estritamente no bloco de mapa das 3 primeiras fichas</div>
+          <span class="lp-stat-source">Fonte: Moz Local Search Factors 2026</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SEÇÃO 2: AGITAÇÃO DA DOR -->
-  <section class="lp-section">
+  <section class="lp-section" id="problema">
     <div class="container">
       <div class="lp-section-title fade-up">
         <span class="lp-label">Riscos da Falta de Manutenção</span>
         <h2>Consequências operacionais de um perfil inativo no Google Maps</h2>
-        <p class="lp-section-desc">O algoritmo reavalia posições continuamente com base na atualização dos dados e na interação de usuários.</p>
       </div>
 
-      <div class="lp-pain-grid fade-up">
+      <div class="lp-pain-cards fade-up">
         <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);margin-bottom:16px;">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--color-primary)"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
           </div>
-          <h4>Perda Gradual de Relevância Local</h4>
-          <p>Fichas estáticas perdem posições no mapa para estabelecimentos concorrentes que atualizam dados e conteúdos com frequência.</p>
+          <h4>Perda Gradual de Relevância</h4>
+          <p>Fichas estáticas perdem posições no mapa para estabelecimentos concorrentes que atualizam dados com frequência.</p>
         </div>
         <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);margin-bottom:16px;">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--color-primary)"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
           </div>
           <h4>Depreciação de Reputação</h4>
-          <p>Avaliações recebidas sem resposta técnica demonstram falta de gestão do ativo e impactam negativamente a conversão de novos usuários.</p>
+          <p>Avaliações sem resposta técnica demonstram falta de gestão do ativo e impactam a conversão de novos usuários.</p>
         </div>
         <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);margin-bottom:16px;">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--color-primary)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
           </div>
-          <h4>Vulnerabilidade a Edições da Comunidade</h4>
-          <p>Usuários do Google Maps podem sugerir alterações no seu telefone, endereço ou horário. Sem monitoramento, dados errados são publicados automaticamente.</p>
+          <h4>Vulnerabilidade a Edições</h4>
+          <p>Usuários do Google Maps podem sugerir alterações. Sem monitoramento, dados errados são publicados no seu perfil.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SEÇÃO 3: ATIVIDADES MENSAIS -->
+  <!-- SEÇÃO 3: ETAPAS -->
   <section class="lp-section lp-section-alt" id="atividades">
     <div class="container">
       <div class="lp-section-title fade-up">
         <span class="lp-label">Rotina Operacional</span>
-        <h2>O que está incluso na gestão mensal da sua ficha</h2>
-      </div>
-
-      <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-        <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 28px;">
-          <h4 style="margin-bottom: 12px; font-size: 1.15rem;">Postagens Semanais Estratégicas</h4>
-          <p style="font-size: 0.95rem; color: var(--color-text-body); line-height: 1.6;">Criação e agendamento de posts periódicos destacando produtos, diferenciais, serviços em alta e avisos institucionais.</p>
-        </div>
-        <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 28px;">
-          <h4 style="margin-bottom: 12px; font-size: 1.15rem;">Gestão de Avaliações</h4>
           <p style="font-size: 0.95rem; color: var(--color-text-body); line-height: 1.6;">Monitoramento em tempo real de novas avaliações e redação de respostas cordiais e estratégicas, fortalecendo a reputação do negócio.</p>
         </div>
         <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 28px;">
