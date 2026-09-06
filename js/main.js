@@ -99,23 +99,75 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // --- Blog Sidebar Filtering & Pagination (3 per page) ---
+  // --- Blog Sidebar Filtering, Search & Pagination (3 per page) ---
   const blogList = document.querySelector('.blog-articles-list');
   const sidebarCatBtns = document.querySelectorAll('.sidebar-cat-btn');
   const blogPagination = document.querySelector('.blog-pagination');
   const blogStatusInfo = document.querySelector('.blog-status-info');
+  const blogSearchInput = document.getElementById('blog-search-input');
+  const blogSearchBtn = document.getElementById('blog-search-btn');
+  const blogSearchClear = document.getElementById('blog-search-clear');
+  const quickTagBtns = document.querySelectorAll('.quick-tag-btn');
 
   if (blogList) {
     const allArticles = Array.from(blogList.querySelectorAll('.blog-card-horizontal'));
     const ITEMS_PER_PAGE = 3;
     let currentCategory = 'all';
+    let currentSearchTerm = '';
     let currentPage = 1;
 
+    // Função de normalização para busca inteligente (remove acentos e pontuações)
+    function normalizeStr(str) {
+      return (str || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim();
+    }
+
+    // Atualiza contadores de categorias dinamicamente com base nos artigos da página
+    sidebarCatBtns.forEach(btn => {
+      const filter = btn.getAttribute('data-filter');
+      const countEl = btn.querySelector('.sidebar-cat-count');
+      if (countEl && filter) {
+        if (filter === 'all') {
+          countEl.textContent = allArticles.length;
+        } else {
+          const count = allArticles.filter(art => {
+            const cats = art.getAttribute('data-category') || '';
+            return cats.split(' ').includes(filter);
+          }).length;
+          countEl.textContent = count;
+        }
+      }
+    });
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
     function renderBlogPage() {
+      const normalizedQuery = normalizeStr(currentSearchTerm);
+
       const filteredArticles = allArticles.filter(article => {
-        if (currentCategory === 'all') return true;
-        const cats = article.getAttribute('data-category') || '';
-        return cats.split(' ').includes(currentCategory);
+        // Checagem de Categoria
+        let matchesCategory = true;
+        if (currentCategory !== 'all') {
+          const cats = article.getAttribute('data-category') || '';
+          matchesCategory = cats.split(' ').includes(currentCategory);
+        }
+
+        // Checagem de Busca
+        let matchesSearch = true;
+        if (normalizedQuery) {
+          const title = normalizeStr(article.querySelector('h3') ? article.querySelector('h3').textContent : '');
+          const desc = normalizeStr(article.querySelector('p') ? article.querySelector('p').textContent : '');
+          const categoryMeta = normalizeStr(article.querySelector('.blog-card-category') ? article.querySelector('.blog-card-category').textContent : '');
+          const fullText = `${title} ${desc} ${categoryMeta}`;
+          matchesSearch = fullText.includes(normalizedQuery);
+        }
+
+        return matchesCategory && matchesSearch;
       });
 
       const totalItems = filteredArticles.length;
@@ -134,14 +186,31 @@ document.addEventListener('DOMContentLoaded', function () {
         article.style.display = '';
       });
 
+      // Atualiza info de status
       if (blogStatusInfo) {
         if (totalItems === 0) {
-          blogStatusInfo.textContent = 'Nenhum artigo encontrado nesta categoria.';
+          if (currentSearchTerm) {
+            blogStatusInfo.innerHTML = `Nenhum artigo encontrado para "<strong>${escapeHtml(currentSearchTerm)}</strong>". <button type="button" class="inline-clear-btn" style="background:none;border:none;color:var(--color-primary);text-decoration:underline;cursor:pointer;font-weight:600;">Limpar busca</button>`;
+            const inlineClear = blogStatusInfo.querySelector('.inline-clear-btn');
+            if (inlineClear) inlineClear.addEventListener('click', clearSearch);
+          } else {
+            blogStatusInfo.textContent = 'Nenhum artigo encontrado nesta categoria.';
+          }
         } else {
-          blogStatusInfo.textContent = `Mostrando ${startIndex + 1}–${Math.min(endIndex, totalItems)} de ${totalItems} artigo${totalItems > 1 ? 's' : ''}`;
+          let statusText = `Mostrando ${startIndex + 1}–${Math.min(endIndex, totalItems)} de ${totalItems} artigo${totalItems > 1 ? 's' : ''}`;
+          if (currentSearchTerm) {
+            statusText += ` para "${escapeHtml(currentSearchTerm)}"`;
+          }
+          blogStatusInfo.textContent = statusText;
         }
       }
 
+      // Botão Limpar busca
+      if (blogSearchClear) {
+        blogSearchClear.style.display = currentSearchTerm ? 'block' : 'none';
+      }
+
+      // Renderiza Paginação
       if (blogPagination) {
         if (totalPages <= 1) {
           blogPagination.innerHTML = '';
@@ -170,6 +239,56 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }
+
+    function doSearch(val) {
+      currentSearchTerm = val.trim();
+      currentPage = 1;
+      renderBlogPage();
+    }
+
+    function clearSearch() {
+      if (blogSearchInput) blogSearchInput.value = '';
+      currentSearchTerm = '';
+      currentPage = 1;
+      renderBlogPage();
+      if (blogSearchInput) blogSearchInput.focus();
+    }
+
+    if (blogSearchInput) {
+      blogSearchInput.addEventListener('input', (e) => {
+        doSearch(e.target.value);
+      });
+      blogSearchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          doSearch(blogSearchInput.value);
+        }
+        if (e.key === 'Escape') {
+          clearSearch();
+        }
+      });
+    }
+
+    if (blogSearchBtn) {
+      blogSearchBtn.addEventListener('click', () => {
+        if (blogSearchInput) doSearch(blogSearchInput.value);
+      });
+    }
+
+    if (blogSearchClear) {
+      blogSearchClear.addEventListener('click', clearSearch);
+    }
+
+    quickTagBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const query = btn.getAttribute('data-search') || '';
+        if (blogSearchInput) {
+          blogSearchInput.value = query;
+          doSearch(query);
+          blogSearchInput.focus();
+        }
+      });
+    });
 
     sidebarCatBtns.forEach(btn => {
       btn.addEventListener('click', () => {

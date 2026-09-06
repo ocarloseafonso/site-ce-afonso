@@ -1550,6 +1550,112 @@ p:last-child { margin-bottom: 0; }
   color: var(--color-white);
 }
 
+/* Sidebar Search Widget */
+.sidebar-search-widget {
+  padding: 24px;
+}
+
+.blog-search-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: var(--color-white);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.blog-search-box:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(193, 3, 69, 0.12);
+}
+
+.blog-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 14px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  outline: none;
+}
+
+.blog-search-input::placeholder {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.blog-search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0 12px;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.blog-search-btn:hover {
+  color: var(--color-primary-dark);
+  transform: scale(1.08);
+}
+
+.blog-search-quick-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.quick-tag-label {
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.quick-tag-btn {
+  font-size: 0.74rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border-light);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all var(--transition-fast);
+}
+
+.quick-tag-btn:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.blog-search-clear {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: center;
+  transition: background var(--transition-fast);
+}
+
+.blog-search-clear:hover {
+  background: #fee2e2;
+}
+
 .sidebar-cta-widget {
   background: linear-gradient(135deg, #1A1A1A 0%, #2A101A 100%);
   color: var(--color-white);

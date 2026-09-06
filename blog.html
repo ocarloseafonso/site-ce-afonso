@@ -18,7 +18,7 @@
   
   <link rel="icon" type="image/png" href="assets/images/logo/favicon.png?v=5">
   <link rel="shortcut icon" href="assets/images/logo/favicon.png?v=5">
-  <link rel="stylesheet" href="css/style.css?v=12">
+  <link rel="stylesheet" href="css/style.css?v=13">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
 
@@ -311,9 +311,33 @@
           <div class="blog-pagination"></div>
         </main>
 
-        <!-- Sidebar Lateral com Categorias Funcionais -->
+        <!-- Sidebar Lateral com Busca e Categorias Funcionais -->
         <aside class="blog-sidebar">
           
+          <!-- Widget Busca de Artigos com Lupa -->
+          <div class="sidebar-widget sidebar-search-widget">
+            <h3>Buscar no Blog</h3>
+            <div class="blog-search-box">
+              <input type="text" id="blog-search-input" class="blog-search-input" placeholder="Pesquisar artigos..." aria-label="Pesquisar artigos no blog" autocomplete="off">
+              <button id="blog-search-btn" class="blog-search-btn" aria-label="Pesquisar" type="button">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="blog-search-quick-tags">
+              <span class="quick-tag-label">Temas:</span>
+              <button type="button" class="quick-tag-btn" data-search="SEO">SEO</button>
+              <button type="button" class="quick-tag-btn" data-search="Google">Google</button>
+              <button type="button" class="quick-tag-btn" data-search="Clínicas">Clínicas</button>
+              <button type="button" class="quick-tag-btn" data-search="WhatsApp">WhatsApp</button>
+            </div>
+            <button id="blog-search-clear" class="blog-search-clear" type="button" style="display: none;">
+              ✕ Limpar busca
+            </button>
+          </div>
+
           <div class="sidebar-widget">
             <h3>Categorias</h3>
             <div class="sidebar-categories">
