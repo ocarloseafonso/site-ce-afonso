@@ -260,40 +260,88 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // --- WhatsApp Float - Dynamic Message ---
-  const whatsappFloat = document.querySelector('.whatsapp-float');
-  if (whatsappFloat) {
-    const pageType = document.body.getAttribute('data-page');
-    let message = '';
+  // --- WhatsApp Tracking - Dynamic Contextual Messages ---
+  function resolveWhatsAppMessage() {
+    const path = window.location.pathname.toLowerCase();
+    const pageType = document.body.getAttribute('data-page') || '';
 
-    switch (pageType) {
-      case 'home':
-        message = 'Olá! Gostaria de saber mais sobre o Protocolo de Destaque Local (PDL).';
-        break;
-      case 'sobre':
-        message = 'Olá! Gostaria de conhecer mais sobre a C.E. Afonso Soluções Digitais.';
-        break;
-      case 'servicos':
-        message = 'Olá! Gostaria de saber mais sobre os pilares do Protocolo de Destaque Local (PDL).';
-        break;
-      case 'blog':
-        message = 'Olá! Vi o blog da C.E. Afonso e gostaria de tirar uma dúvida.';
-        break;
-      case 'faq':
-        message = 'Olá! Tenho uma dúvida sobre o Protocolo de Destaque Local (PDL).';
-        break;
-      case 'contato':
-        message = 'Olá! Gostaria de uma consultoria estratégica para o meu negócio.';
-        break;
-      default:
-        message = 'Olá! Gostaria de saber mais sobre as soluções digitais.';
+    // Mapeamento semântico por artigo do Blog
+    const articleMessages = {
+      'seo-local-para-clinicas': 'Olá, vim do artigo sobre SEO local para Clinicas em Volta Redonda e gostaria de saber mais!',
+      'topo-google-volta-redonda': 'Olá, vim do artigo falando sobre colocar a empresa no topo do Google e gostaria de saber como funciona.',
+      'erros-mapa-google': 'Olá, vim do artigo sobre os 7 erros que somem com sua empresa do Google Maps e gostaria de saber mais!',
+      'guia-google-meu-negocio': 'Olá, vim do artigo Guia Prático de Google Meu Negócio e gostaria de otimizar minha empresa.',
+      'importancia-seo-local': 'Olá, vim do artigo sobre a importância do SEO local e gostaria de saber mais!',
+      'poder-das-avaliacoes': 'Olá, vim do artigo sobre o poder das avaliações no Google e gostaria de saber mais!',
+      'por-que-sistema-posicionamento': 'Olá, vim do artigo sobre por que você precisa de um sistema de posicionamento e gostaria de saber mais!',
+      'posicionamento-google': 'Olá, vim do artigo sobre posicionamento no Google e gostaria de solicitar uma auditoria gratuita.',
+      'protocolo-destaque-local': 'Olá, vim do artigo sobre o Protocolo de Destaque Local e gostaria de saber mais!',
+      'site-para-negocio-local': 'Olá, vim do artigo sobre sites para negócios locais e gostaria de saber mais!',
+      'trafego-vs-organico': 'Olá, vim do artigo sobre Tráfego Pago vs Orgânico e gostaria de saber mais!',
+      'anuncios-vs-organico': 'Olá, vim do artigo sobre Anúncios vs Tráfego Orgânico e gostaria de saber mais!',
+      'whatsapp-maquina-vendas': 'Olá, vim do artigo sobre transformar o WhatsApp em máquina de vendas e gostaria de saber mais!',
+      'whatsapp-para-negocios': 'Olá, vim do artigo sobre WhatsApp para Negócios e gostaria de saber mais!'
+    };
+
+    // Verifica se está dentro de um artigo específico do blog pelo slug da URL
+    for (const [slug, msg] of Object.entries(articleMessages)) {
+      if (path.includes(slug)) {
+        return msg;
+      }
     }
 
-    const encodedMessage = encodeURIComponent(message);
-    whatsappFloat.setAttribute('href', 'https://wa.me/5524992074661?text=' + encodedMessage);
+    // Fallback dinâmico para novos artigos do blog
+    if (path.includes('/blog/') && !path.endsWith('/blog/') && !path.endsWith('/blog') && !path.endsWith('blog.html')) {
+      const heading = document.querySelector('article h1') || document.querySelector('h1');
+      if (heading && heading.textContent.trim()) {
+        const title = heading.textContent.trim().replace(/\s+/g, ' ');
+        return `Olá, vim do artigo "${title}" e gostaria de saber mais!`;
+      }
+      return 'Olá, vim de um artigo do blog da C.E. Afonso e gostaria de saber mais!';
+    }
+
+    // Mapeamento semântico por página institucional
+    switch (pageType) {
+      case 'home':
+        return 'Olá! Gostaria de saber mais sobre os serviços da C.E. Afonso Soluções Digitais.';
+      case 'sobre':
+        return 'Olá! Vim da página Sobre e gostaria de conhecer mais sobre a C.E. Afonso Soluções Digitais.';
+      case 'servicos':
+        return 'Olá! Vim da página de Serviços e gostaria de entender qual solução é ideal para minha empresa.';
+      case 'blog':
+        return 'Olá! Vim do Blog da C.E. Afonso e gostaria de saber mais sobre os conteúdos e serviços.';
+      case 'faq':
+        return 'Olá! Vim da página de Perguntas Frequentes (FAQ) e gostaria de tirar uma dúvida sobre os serviços.';
+      case 'contato':
+        return 'Olá! Vim da página de Contato e gostaria de solicitar uma análise estratégica.';
+      default:
+        if (path.includes('sobre')) return 'Olá! Vim da página Sobre e gostaria de conhecer mais sobre a C.E. Afonso Soluções Digitais.';
+        if (path.includes('servicos')) return 'Olá! Vim da página de Serviços e gostaria de saber mais.';
+        if (path.includes('faq')) return 'Olá! Vim da página de Dúvidas Frequentes e gostaria de tirar uma dúvida.';
+        if (path.includes('contato')) return 'Olá! Gostaria de solicitar uma análise estratégica para o meu negócio.';
+        return 'Olá! Gostaria de saber mais sobre as soluções digitais da C.E. Afonso.';
+    }
+  }
+
+  const defaultTrackedMsg = resolveWhatsAppMessage();
+  const encodedTrackedMsg = encodeURIComponent(defaultTrackedMsg);
+
+  // Atualiza o botão flutuante do WhatsApp
+  const whatsappFloat = document.querySelector('.whatsapp-float');
+  if (whatsappFloat) {
+    whatsappFloat.setAttribute('href', 'https://wa.me/5524992074661?text=' + encodedTrackedMsg);
     whatsappFloat.setAttribute('target', '_blank');
     whatsappFloat.setAttribute('rel', 'noopener noreferrer');
   }
+
+  // Atualiza links de WhatsApp genéricos (sem texto pré-definido) para carregar o rastreio da página
+  const genericWaLinks = document.querySelectorAll('a[href^="https://wa.me/5524992074661"]');
+  genericWaLinks.forEach(function (link) {
+    const currentHref = link.getAttribute('href');
+    if (currentHref && !currentHref.includes('?text=')) {
+      link.setAttribute('href', 'https://wa.me/5524992074661?text=' + encodedTrackedMsg);
+    }
+  });
 
   // --- Lazy Loading Images (fallback for older browsers) ---
   if ('IntersectionObserver' in window) {
