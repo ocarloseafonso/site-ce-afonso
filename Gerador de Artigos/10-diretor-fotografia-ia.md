@@ -46,14 +46,20 @@ Escolha automaticamente uma das seguintes categorias:
 
 ---
 
-## 3. PESSOAS E NATURALIDADE
+## 3. PESSOAS, REPRESENTATIVIDADE E NATURALIDADE (REGRA OBRIGATÓRIA)
+
+**DIRETRIZ DE REPRESENTATIVIDADE INEGOCIÁVEL:**
+- Por determinação institucional, **sempre retratar pessoas pretas (Black / Afro-Brazilian people)**.
+- Em caso de cenas com várias pessoas, **a grande maioria deve ser composta por pessoas pretas**.
+- Incluir homens e mulheres de **diferentes biotipos e faixas etárias** (jovens adultos, adultos experientes, idosos ativos) atuando com naturalidade e dignidade profissional.
+- Contexto brasileiro real: ambientes de trabalho do Brasil, sem afetação ou estereótipos.
 
 Quando pessoas forem utilizadas:
-- Características faciais e texturas de pele naturais, sem aspecto plástico.
-- Pequenas imperfeições reais (linhas de expressão, iluminação suave).
-- Posturas espontâneas durante uma atividade real.
-- Roupas plausíveis para o ambiente de trabalho brasileiro.
-- Evitar pessoas olhando fixamente para a câmera com sorrisos artificiais de banco de imagens.
+- Características faciais e texturas de pele naturais e ricas em detalhes autênticos, sem aspecto plástico.
+- Pequenas imperfeições reais (linhas de expressão, textura de pele natural, iluminação ambiente).
+- Posturas espontâneas durante uma atividade profissional real (consultoria, atendimento a cliente, análise de dados, trabalho prático).
+- Roupas plausíveis para o ambiente de trabalho e comércio brasileiro.
+- Evitar poses estáticas de banco de imagens ou sorrisos exagerados olhando diretamente para a câmera.
 
 ---
 

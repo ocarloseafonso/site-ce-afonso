@@ -43,3 +43,7 @@ fix_related.py
 fix_urls.py
 atualizar_imagens.bat
 abrir_site.bat
+
+# Python cache
+__pycache__/
+*.pyc

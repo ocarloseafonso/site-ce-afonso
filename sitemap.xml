@@ -14,25 +14,68 @@
     </url>
     <url>
         <loc>https://www.ceafonso.com.br/pdl</loc>
-        <lastmod>2026-04-16</lastmod>
+        <lastmod>2026-09-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+    <!-- Hub de Serviços e LPs Avulsas -->
+    <url>
+        <loc>https://www.ceafonso.com.br/servicos</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.ceafonso.com.br/google-meu-negocio</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://www.ceafonso.com.br/gestao-google-meu-negocio</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://www.ceafonso.com.br/site-institucional</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://www.ceafonso.com.br/landing-pages</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.ceafonso.com.br/mini-site</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.ceafonso.com.br/auditoria-presenca-digital</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
     <url>
         <loc>https://www.ceafonso.com.br/blog</loc>
-        <lastmod>2026-04-16</lastmod>
+        <lastmod>2026-09-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.ceafonso.com.br/faq</loc>
-        <lastmod>2026-04-16</lastmod>
+        <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.ceafonso.com.br/contato</loc>
-        <lastmod>2026-04-16</lastmod>
+        <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>

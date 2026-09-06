@@ -99,11 +99,96 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // --- Blog Filtering ---
-  const blogFilterBtns = document.querySelectorAll('.blog-filter-btn');
-  const blogCards = document.querySelectorAll('.blog-grid .blog-card');
+  // --- Blog Sidebar Filtering & Pagination (3 per page) ---
+  const blogList = document.querySelector('.blog-articles-list');
+  const sidebarCatBtns = document.querySelectorAll('.sidebar-cat-btn');
+  const blogPagination = document.querySelector('.blog-pagination');
+  const blogStatusInfo = document.querySelector('.blog-status-info');
 
-  if (blogFilterBtns.length > 0 && blogCards.length > 0) {
+  if (blogList) {
+    const allArticles = Array.from(blogList.querySelectorAll('.blog-card-horizontal'));
+    const ITEMS_PER_PAGE = 3;
+    let currentCategory = 'all';
+    let currentPage = 1;
+
+    function renderBlogPage() {
+      const filteredArticles = allArticles.filter(article => {
+        if (currentCategory === 'all') return true;
+        const cats = article.getAttribute('data-category') || '';
+        return cats.split(' ').includes(currentCategory);
+      });
+
+      const totalItems = filteredArticles.length;
+      const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE) || 1;
+
+      if (currentPage > totalPages) currentPage = 1;
+
+      const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+      const endIndex = startIndex + ITEMS_PER_PAGE;
+
+      allArticles.forEach(article => {
+        article.style.display = 'none';
+      });
+
+      filteredArticles.slice(startIndex, endIndex).forEach(article => {
+        article.style.display = '';
+      });
+
+      if (blogStatusInfo) {
+        if (totalItems === 0) {
+          blogStatusInfo.textContent = 'Nenhum artigo encontrado nesta categoria.';
+        } else {
+          blogStatusInfo.textContent = `Mostrando ${startIndex + 1}–${Math.min(endIndex, totalItems)} de ${totalItems} artigo${totalItems > 1 ? 's' : ''}`;
+        }
+      }
+
+      if (blogPagination) {
+        if (totalPages <= 1) {
+          blogPagination.innerHTML = '';
+        } else {
+          let html = '';
+          html += `<button class="pagination-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}">← Anterior</button>`;
+
+          for (let p = 1; p <= totalPages; p++) {
+            html += `<button class="pagination-btn ${p === currentPage ? 'active' : ''}" data-page="${p}">${p}</button>`;
+          }
+
+          html += `<button class="pagination-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}">Próxima →</button>`;
+
+          blogPagination.innerHTML = html;
+
+          blogPagination.querySelectorAll('.pagination-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+              const targetPage = parseInt(btn.getAttribute('data-page'), 10);
+              if (targetPage && targetPage !== currentPage && targetPage >= 1 && targetPage <= totalPages) {
+                currentPage = targetPage;
+                renderBlogPage();
+                blogList.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            });
+          });
+        }
+      }
+    }
+
+    sidebarCatBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        sidebarCatBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.getAttribute('data-filter') || 'all';
+        currentPage = 1;
+        renderBlogPage();
+      });
+    });
+
+    renderBlogPage();
+  }
+
+  // Fallback for legacy blog filter buttons if present
+  const blogFilterBtns = document.querySelectorAll('.blog-filter-btn');
+  const legacyBlogCards = document.querySelectorAll('.blog-grid .blog-card');
+
+  if (blogFilterBtns.length > 0 && legacyBlogCards.length > 0) {
     blogFilterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         blogFilterBtns.forEach(b => b.classList.remove('active'));
@@ -111,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const filterValue = btn.getAttribute('data-filter');
 
-        blogCards.forEach(card => {
+        legacyBlogCards.forEach(card => {
           if (filterValue === 'all') {
             card.style.display = '';
           } else {

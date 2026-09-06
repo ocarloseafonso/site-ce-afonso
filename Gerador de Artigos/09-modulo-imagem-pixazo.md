@@ -9,6 +9,7 @@ Sempre que o sistema criar um novo artigo, depois de definir o tema e finalizar 
 A imagem deve ser criada:
 - **Sem qualquer texto, palavra, letra, número, logotipo, marca ou elemento tipográfico.**
 - Com aparência de **fotografia profissional produzida por um fotógrafo real**, e não uma imagem artificial de IA.
+- **Diretriz de Representatividade Obrigatória:** Sempre retratar pessoas pretas (Black / Afro-Brazilian people). Quando houver múltiplas pessoas, a maioria absoluta deve ser de pessoas pretas, contemplando homens e mulheres de variados biotipos e faixas etárias.
 - Formato **horizontal 16:9** (ou 3:2), otimizada para capa e miniatura de blog.
 
 ---

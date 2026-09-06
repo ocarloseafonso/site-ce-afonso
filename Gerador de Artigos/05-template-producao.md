@@ -102,6 +102,7 @@ Palavra-chave principal presente em: título / H2 / primeiro parágrafo / meta d
 - **[OBRIGATÓRIO]** Nenhum campo de 3.2 e 3.3 pode ficar vazio — vêm diretamente dos Documentos 04 e 03, que já devem estar preenchidos antes da produção começar.
 - **[PADRÃO]** O campo 3.4 (caso de apoio) pode ficar em branco. Forçar um caso que não se encaixa é pior do que não citar nenhum.
 - **[OBRIGATÓRIO]** O campo 3.7 é preenchido de forma honesta — se alguma resposta for "não", o artigo volta para ajuste antes de seguir para o Documento 06.
+- **[OBRIGATÓRIO - INTEGRIDADE DO LAYOUT]** Todo artigo publicado DEVE usar a estrutura padrão definida em `blog/template-artigo.html`. É estritamente proibido publicar artigos com rodapé simplificado ou truncado. O rodapé DEVE conter as 4 colunas completas (Marca, Redes Sociais, Navegação com link para Serviços, Contato com CNPJ 68.894.903/0001-05 e Volta Redonda - RJ) e o botão flutuante de WhatsApp.
 
 ---
 
