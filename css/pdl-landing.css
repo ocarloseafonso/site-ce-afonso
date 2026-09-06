@@ -455,6 +455,16 @@ strong { color: var(--color-text); font-weight: 700; }
   line-height: 1.5;
 }
 
+.lp-stat-source {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  margin-top: 10px;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  opacity: 0.85;
+}
+
 .lp-data-body {
   max-width: 740px;
   margin: 0 auto;
