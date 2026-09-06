@@ -18,7 +18,7 @@
   
     <link rel="icon" type="image/png" href="assets/images/logo/favicon.png?v=5">
   <link rel="shortcut icon" href="assets/images/logo/favicon.png?v=5">
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=11">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
 
@@ -69,85 +69,104 @@
     <div class="container">
       <div class="section-header">
         <h2>Artigos em Destaque</h2>
-        <p>Os posts mais lidos do nosso blog, com estratégias práticas para negócios locais.</p>
+        <p>Estratégias práticas, serviços e curiosidades para donos de negócios locais que buscam previsibilidade e crescimento.</p>
       </div>
+
+      <div class="blog-filters">
+        <button class="blog-filter-btn active" data-filter="all">Todos os Artigos</button>
+        <button class="blog-filter-btn" data-filter="servicos">Serviços</button>
+        <button class="blog-filter-btn" data-filter="seo-local">SEO Local</button>
+        <button class="blog-filter-btn" data-filter="gmn">Google Meu Negócio</button>
+        <button class="blog-filter-btn" data-filter="pdl">Protocolo PDL</button>
+        <button class="blog-filter-btn" data-filter="curiosidades">Curiosidades</button>
+      </div>
+
       <div class="blog-grid">
-        <article class="blog-card">
+        <article class="blog-card" data-category="servicos seo-local">
+          <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/seo-local-para-clinicas.webp" alt="SEO Local para Clínicas em Volta Redonda" style="width:100%; height:100%; object-fit:cover;"></div>
+          <div class="blog-card-body">
+            <span class="blog-card-category">Serviços • SEO Local</span>
+            <h3>SEO Local para Clínicas em Volta Redonda</h3>
+            <p>Como clínicas e consultórios podem atrair uma agenda cheia de pacientes qualificados através do Google.</p>
+            <a href="blog/seo-local-para-clinicas.html" class="blog-card-link">Ler mais</a>
+          </div>
+        </article>
+        <article class="blog-card" data-category="servicos seo-local">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/topo-google-volta-redonda.webp" alt="topo-google-volta-redonda" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">SEO Local</span>
+            <span class="blog-card-category">Serviços • SEO Local</span>
             <h3>Como colocar sua empresa no topo do Google em Volta Redonda</h3>
             <p>Estratégias práticas para dominar as buscas locais na região Sul Fluminense.</p>
             <a href="blog/topo-google-volta-redonda.html" class="blog-card-link">Ler mais</a>
           </div>
         </article>
-        <article class="blog-card">
+        <article class="blog-card" data-category="servicos gmn">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/guia-google-meu-negocio.webp" alt="guia-google-meu-negocio" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">Google Meu Negócio</span>
+            <span class="blog-card-category">Serviços • Google Meu Negócio</span>
             <h3>Google Meu Negócio: o guia definitivo para atrair clientes locais</h3>
             <p>Tudo o que você precisa saber para transformar sua ficha em uma máquina de leads.</p>
             <a href="blog/guia-google-meu-negocio.html" class="blog-card-link">Ler mais</a>
           </div>
         </article>
-        <article class="blog-card">
+        <article class="blog-card" data-category="curiosidades gmn">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/erros-mapa-google.webp" alt="erros-mapa-google" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">Estratégia</span>
+            <span class="blog-card-category">Curiosidades • Erros Comuns</span>
             <h3>3 erros que fazem sua empresa sumir do mapa do Google</h3>
             <p>Evite os falhas comuns que sabotam o posicionamento de negócios locais.</p>
             <a href="blog/erros-mapa-google.html" class="blog-card-link">Ler mais</a>
           </div>
         </article>
-        <article class="blog-card">
+        <article class="blog-card" data-category="servicos pdl">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/por-que-sistema-posicionamento.webp" alt="por-que-sistema-posicionamento" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">PDL</span>
+            <span class="blog-card-category">Serviços • Protocolo PDL</span>
             <h3>Protocolo PDL: por que sua empresa precisa de um sistema de posicionamento?</h3>
             <p>Entenda a ciência por trás do destaque local e como ele gera previsibilidade.</p>
             <a href="blog/por-que-sistema-posicionamento.html" class="blog-card-link">Ler mais</a>
           </div>
         </article>
-        <article class="blog-card">
+        <article class="blog-card" data-category="servicos whatsapp">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/whatsapp-para-negocios.webp" alt="whatsapp-para-negocios" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">Conversão</span>
+            <span class="blog-card-category">Serviços • WhatsApp & Vendas</span>
             <h3>WhatsApp para Negócios: como converter buscas em agendamentos</h3>
             <p>O funil completo desde o clique no Google até o "fechado" no WhatsApp.</p>
             <a href="blog/whatsapp-para-negocios.html" class="blog-card-link">Ler mais</a>
           </div>
         </article>
-        <article class="blog-card">
+        <article class="blog-card" data-category="curiosidades avaliacoes">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/poder-das-avaliacoes.webp" alt="poder-das-avaliacoes" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">Marketing Local</span>
+            <span class="blog-card-category">Curiosidades • Prova Social</span>
             <h3>O poder das avaliações: como a prova social escala seu negócio</h3>
             <p>Como incentivar o feedback positivo e usar isso para subir no ranking.</p>
             <a href="blog/poder-das-avaliacoes.html" class="blog-card-link">Ler mais</a>
           </div>
         </article>
-        <article class="blog-card">
+        <article class="blog-card" data-category="servicos sites">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/site-para-negocio-local.webp" alt="site-para-negocio-local" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">Web Design</span>
+            <span class="blog-card-category">Serviços • Criação de Sites</span>
             <h3>Seu site é uma vitrine ou um vendedor? A estrutura ideal para negócios locais</h3>
             <p>Saiba como transformar seu site em uma ferramenta ativa de vendas locais.</p>
             <a href="blog/site-para-negocio-local.html" class="blog-card-link">Ler mais</a>
           </div>
         </article>
-        <article class="blog-card">
+        <article class="blog-card" data-category="curiosidades trafego">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/anuncios-vs-organico.webp" alt="anuncios-vs-organico" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">Investimento</span>
+            <span class="blog-card-category">Curiosidades • Tráfego & ROI</span>
             <h3>Anúncios vs. Orgânico: o que traz mais retorno para negócios locais?</h3>
             <p>Onde focar seu orçamento para ter previsibilidade e lucro real.</p>
             <a href="blog/anuncios-vs-organico.html" class="blog-card-link">Ler mais</a>
           </div>
         </article>
-        <article class="blog-card">
+        <article class="blog-card" data-category="servicos seo-local">
           <div class="blog-card-img" style="height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;"><img src="assets/images/blog/importancia-seo-local.webp" alt="importancia-seo-local" style="width:100%; height:100%; object-fit:cover;"></div>
           <div class="blog-card-body">
-            <span class="blog-card-category">Estratégia</span>
+            <span class="blog-card-category">Serviços • SEO Local</span>
             <h3>Por que o SEO Local é o melhor investimento a longo prazo</h3>
             <p>Construa um ativo digital que cresce sozinho e domina sua região.</p>
             <a href="blog/importancia-seo-local.html" class="blog-card-link">Ler mais</a>

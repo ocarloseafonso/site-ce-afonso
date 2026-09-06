@@ -76,9 +76,18 @@ URL proposta:
 Headings (H2) planejados:
 Schema aplicável: (Article/BlogPosting + FAQPage se pertinente)
 
+3.6b — IMAGEM DE CAPA E MINIATURA (origem: Documentos 09 e 10)
+Conceito visual (Diretor de Fotografia IA):
+Prompt em inglês (Pixazo FLUX Schnell):
+Negative prompt:
+Formato e Proporção: 16:9 (horizontal, sem texto/logos)
+Caminho do arquivo: assets/images/blog/[slug].webp
+Alt text da imagem:
+
 3.7 — AUTOAVALIAÇÃO PÓS-ESCRITA (preenchida após o rascunho)
 O artigo passou no "teste da cidade trocada"? (sim/não)
 O artigo evitou todos os itens da lista anti-padrão-IA (Documento 01, item 6)? (sim/não)
+A imagem de capa/miniatura foi gerada via Pixazo e validada sem texto/marcas? (sim/não)
 A citação de serviço (se houve) ficou natural, não forçada? (sim/não)
 Links internos inseridos: (quantidade e destinos)
 Palavra-chave principal presente em: título / H2 / primeiro parágrafo / meta description (marcar todos que se aplicam)

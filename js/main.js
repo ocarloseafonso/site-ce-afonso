@@ -99,6 +99,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // --- Blog Filtering ---
+  const blogFilterBtns = document.querySelectorAll('.blog-filter-btn');
+  const blogCards = document.querySelectorAll('.blog-grid .blog-card');
+
+  if (blogFilterBtns.length > 0 && blogCards.length > 0) {
+    blogFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        blogFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        blogCards.forEach(card => {
+          if (filterValue === 'all') {
+            card.style.display = '';
+          } else {
+            const categories = card.getAttribute('data-category');
+            if (categories && categories.split(' ').includes(filterValue)) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+  }
+
   document.querySelectorAll('.faq-question').forEach(function (btn) {
     btn.addEventListener('click', function () {
       const item = this.parentElement;

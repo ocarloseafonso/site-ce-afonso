@@ -181,8 +181,10 @@ TÍTULO: SEO Local para clínicas em Volta Redonda
 KEYWORD PRINCIPAL: SEO Local para clínicas Volta Redonda
 NICHO: clínicas
 SERVIÇO RELACIONADO: SEO Local
-STATUS: PENDENTE
+STATUS: PUBLICADO
 PRIORIDADE: ALTA
+URL: https://www.ceafonso.com.br/blog/seo-local-para-clinicas
+DATA PUBLICAÇÃO: 04/09/2026
 ARTIGOS RELACIONADOS: SEO-LOCAL-001
 ```
 

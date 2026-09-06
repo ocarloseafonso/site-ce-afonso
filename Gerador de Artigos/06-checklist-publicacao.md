@@ -56,6 +56,20 @@
 [ ] Schema Article/BlogPosting definido, com autoria de Carlos Eduardo Afonso
 ```
 
+## 4.1 Checklist — Imagem de Capa e Miniatura (Documentos 09 e 10)
+
+```
+[ ] Prompt fotográfico gerado pelo Diretor de Fotografia IA em inglês
+[ ] Imagem gerada via Pixazo API (FLUX Schnell)
+[ ] ZERO texto, palavras, números, legendas ou letras visíveis
+[ ] ZERO marcas comerciais, logotipos ou marcas d'água
+[ ] Aparência de fotografia real e documental (evitou termos de 3D/CGI/8K)
+[ ] Formato horizontal 16:9, salvo em assets/images/blog/[slug].webp
+[ ] Imagem configurada como capa do post (<div class="post-featured-image">)
+[ ] Imagem configurada como miniatura do card no blog.html (<div class="blog-card-img">)
+[ ] Alt text preenchido com descrição natural do conteúdo da cena
+```
+
 ## 5. Checklist — Uso de serviço e casos (Documentos 03 e 07)
 
 ```

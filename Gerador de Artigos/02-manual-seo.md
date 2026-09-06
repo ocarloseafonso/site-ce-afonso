@@ -104,11 +104,13 @@ Isso não estava no plano original, mas é importante para negócio local — aj
 
 ---
 
-## 11. Imagens
+## 11. Imagens de Capa e Miniaturas (origem: Documentos 09 e 10)
 
-- **[OBRIGATÓRIO]** Toda imagem usada no artigo tem texto alternativo (alt text) descritivo, incluindo a keyword quando natural — nunca "empilhar" keyword no alt text de forma forçada.
-- **[PADRÃO]** Nome do arquivo de imagem descritivo (ex: `perfil-google-meu-negocio-volta-redonda.jpg`), não `IMG_2384.jpg`.
-- **[PADRÃO]** Comprimir imagens antes do upload para não prejudicar velocidade de carregamento.
+- **[OBRIGATÓRIO]** Toda publicação de artigo possui imagem de capa e miniatura gerada automaticamente via Pixazo API (FLUX Schnell), seguindo as diretrizes do Diretor de Fotografia IA.
+- **[OBRIGATÓRIO]** Proporção 16:9 horizontal, salva no formato otimizado `.webp` na pasta `assets/images/blog/[slug].webp`.
+- **[OBRIGATÓRIO]** Texto alternativo (`alt`) contextualizado e descritivo da cena fotográfica, sem keyword stuffing.
+- **[OBRIGATÓRIO]** Ausência absoluta de textos, logotipos ou marcas d'água na imagem (o texto pertence ao HTML e ao SEO, não à fotografia).
+- **[PADRÃO]** Referenciada no Schema.org `BlogPosting` como propriedade `"image": "https://www.ceafonso.com.br/assets/images/blog/[slug].webp"` e na meta tag OpenGraph `og:image`.
 
 ---
 
