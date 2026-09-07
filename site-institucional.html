@@ -3,245 +3,420 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Criação de Sites Institucionais em Volta Redonda | C.E. Afonso</title>
-  <meta name="description" content="Criação de sites institucionais profissionais em Volta Redonda e Brasil. Sites rápidos, responsivos e otimizados para o Google atraírem clientes reais.">
-  <meta name="keywords" content="criação de site volta redonda, site institucional profissional, empresa criação de sites rj, desenvolvimento web volta redonda">
+  <title>Criação de Sites em Volta Redonda | C.E. Afonso Soluções Digitais</title>
+  <meta name="description" content="Criação de sites institucionais profissionais em Volta Redonda e região. Estrutura rápida, responsiva e otimizada para aparecer nas buscas do Google.">
+  <meta name="keywords" content="criação de sites volta redonda, desenvolvimento de sites institucionais, site profissional para empresas, criar site vr, seo para sites locais">
   <link rel="canonical" href="https://www.ceafonso.com.br/site-institucional">
-  <meta property="og:title" content="Criação de Sites Institucionais em Volta Redonda | C.E. Afonso">
-  <meta property="og:description" content="Transforme sua presença digital com um site institucional rápido, responsivo e preparado para o Google.">
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Criação de Sites em Volta Redonda | C.E. Afonso Soluções Digitais">
+  <meta property="og:description" content="Por que sua empresa perde clientes sem um site profissional e como estruturar uma presença digital sólida no Google.">
+  <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.ceafonso.com.br/site-institucional">
   <meta property="og:locale" content="pt_BR">
   <meta name="robots" content="index, follow">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="assets/images/logo/favicon.png?v=5">
   <link rel="shortcut icon" href="assets/images/logo/favicon.png?v=5">
-  <link rel="stylesheet" href="css/pdl-landing.css?v=2">
-  <style>
-    :root {
-      --color-primary: #8A2BE2;
-      --color-primary-dark: #6A1B9A;
-      --color-primary-darker: #4A148C;
-      --color-primary-light: #AB47BC;
-      --color-primary-ultra-light: rgba(138, 43, 226, 0.1);
-      --color-primary-ghost: rgba(138, 43, 226, 0.05);
-      --shadow-glow: 0 0 40px rgba(138, 43, 226, 0.25);
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Criação de Sites Institucionais",
+    "provider": {
+      "@type": "Organization",
+      "name": "C.E. Afonso Soluções Digitais",
+      "url": "https://www.ceafonso.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Volta Redonda",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "serviceType": "Desenvolvimento Web e SEO Local",
+    "areaServed": {
+      "@type": "City",
+      "name": "Volta Redonda"
+    },
+    "description": "Criação de sites institucionais em Volta Redonda com código limpo, foco em ranqueamento orgânico no Google e conversão direta para WhatsApp."
+  }
+  </script>
 </head>
 <body data-page="site-institucional">
-
-  <!-- ===== HEADER SIMPLIFICADO ===== -->
-  <header class="lp-header" id="lp-header">
-    <div class="lp-header-inner">
-      <a href="/" class="lp-logo" aria-label="Ir para o site principal">
-        <img src="assets/images/logo/logo-original.webp" alt="C.E. Afonso Soluções Digitais" width="150" height="48">
-      </a>
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <a href="servicos" class="lp-header-back">Serviços</a>
-        <a href="/" class="lp-header-back" id="btn-voltar-site">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
-          Ir para o site
-        </a>
-      </div>
+  <!-- HEADER PADRÃO COMPLETO DO SITE -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo"><img src="assets/images/logo/logo-original.webp?v=4" alt="C.E. Afonso Soluções Digitais" width="160" height="48"></a>
+      <nav class="nav" role="navigation" aria-label="Menu principal">
+        <a href="/" class="nav-link">Início</a>
+        <a href="sobre" class="nav-link">Sobre</a>
+        <a href="servicos" class="nav-link active">Serviços</a>
+        <a href="blog" class="nav-link">Blog</a>
+        <a href="faq" class="nav-link">FAQ</a>
+        <a href="contato" class="nav-link">Contato</a>
+        <a href="https://wa.me/5524992074661" class="btn btn-primary btn-sm header-cta" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
     </div>
+    <div class="nav-overlay"></div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="lp-hero" id="hero">
-    <div class="container lp-hero-content">
-      <div class="lp-badge-row fade-up">
-        <span class="lp-badge">PRESENÇA DIGITAL PROFISSIONAL</span>
-      </div>
-      <h1 class="fade-up">Desenvolvimento de Sites Institucionais Estruturados para <span>Alta Performance e SEO Local</span></h1>
-      <p class="lp-hero-sub fade-up">Criamos sites institucionais ultrarrápidos, responsivos e otimizados para os critérios de indexação do Google — transformando a presença digital da sua empresa em um ativo permanente de autoridade e geração de contatos.</p>
-      <div class="lp-cta-group fade-up">
-        <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20projeto%20de%20site%20institucional." class="btn-lp btn-lp-primary btn-lp-pulse" target="_blank" rel="noopener noreferrer" id="cta-hero">→ Solicitar Proposta de Desenvolvimento</a>
-      </div>
+  <!-- PAGE HERO DO SITE -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="/">Início</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="servicos">Serviços</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Site Institucional</span>
+      </nav>
+      <h1>Criação de Sites em Volta Redonda</h1>
+      <p>Construção de sites institucionais com páginas individuais para serviços, otimização técnica para o Google e foco em clientes que pesquisam antes de fechar negócio.</p>
     </div>
   </section>
 
-  <!-- SEÇÃO DE DADOS DE MERCADO COM FONTES -->
-  <section class="lp-section lp-section-alt" id="dados">
+  <!-- ARTIGO EDITORIAL DE SERVIÇO COM SIDEBAR -->
+  <main class="service-article-wrapper">
     <div class="container">
-      <div class="lp-section-title fade-up">
-        <span class="lp-label">Fatos de Mercado</span>
-        <h2>O impacto da arquitetura web nos resultados de busca orgânica</h2>
-      </div>
+      <div class="service-article-grid">
+        
+        <!-- CONTEÚDO PRINCIPAL DO ARTIGO -->
+        <article class="service-article-main">
+          <h2>Criação de Sites em Volta Redonda: por que sua empresa perde clientes sem um site profissional</h2>
 
-      <div class="lp-stats-grid fade-up">
-        <div class="lp-stat-card">
-          <div class="lp-stat-number"><span class="lp-counter" data-target="96">0</span>,55%</div>
-          <div class="lp-stat-label">de todas as páginas da internet não recebem tráfego orgânico por falhas de SEO estrutural</div>
-          <span class="lp-stat-source">Fonte: Ahrefs Study (14B+ páginas) 2023</span>
-        </div>
-        <div class="lp-stat-card">
-          <div class="lp-stat-number"><span class="lp-counter" data-target="53">0</span>%</div>
-          <div class="lp-stat-label">dos acessos mobile são abandonados se a página demorar mais de 3 segundos para carregar</div>
-          <span class="lp-stat-source">Fonte: Google / Think with Google</span>
-        </div>
-        <div class="lp-stat-card">
-          <div class="lp-stat-number"><span class="lp-counter" data-target="76">0</span>%</div>
-          <div class="lp-stat-label">das buscas locais em smartphones convertem-se em contato ou visita em até 24 horas</div>
-          <span class="lp-stat-source">Fonte: Think with Google</span>
-        </div>
-      </div>
-    </div>
-  </section>
+          <p class="service-article-lead">
+            Sua empresa provavelmente já fecha negócio pelo WhatsApp e pelo Instagram. A questão é o que acontece antes disso — na hora em que o cliente ainda está decidindo se liga pra você ou pro concorrente.
+          </p>
 
-  <!-- SEÇÃO 2: AGITAÇÃO DA DOR -->
-  <section class="lp-section" id="problema">
-    <div class="container">
-      <div class="lp-section-title fade-up">
-        <span class="lp-label">Deficiências Técnicas Comuns</span>
-        <h2>Razões pelas quais a maioria dos sites empresariais falha em gerar resultados</h2>
-      </div>
+          <!-- Imagem 1: Ilustração comparativa de busca no Google -->
+          <figure class="editorial-figure">
+            <img src="assets/images/servicos/busca_google_vs_site.jpg" alt="Ilustração mostrando busca no Google de um lado e o contraste entre perfil genérico e um site institucional estruturado" width="1200" height="675" loading="lazy">
+            <figcaption class="editorial-caption">
+              A diferença entre depender de redes sociais dispersas e oferecer um site organizado com endereço, serviços e dados para quem pesquisa no Google.
+            </figcaption>
+          </figure>
 
-      <div class="lp-pain-cards fade-up">
-        <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M13 2.05v2.02c3.95.49 7 3.85 7 7.93 0 3.21-1.92 6.01-4.72 7.28L14 17v4.95c6.05-1.07 10.5-6.38 10-12.65-.45-5.69-5.06-10.3-11-10.75V2.05zM3.05 11c.49-3.95 3.85-7 7.95-7V2.05c-5.05.45-9.15 4.1-9.95 9.05L3.05 11zm7.95 10.95c-3.95-.49-7-3.85-7-7.95H1.05c.45 5.05 4.1 9.15 9.05 9.95v-2z"/></svg>
+          <h2>O problema não é presença digital. É não ter onde o cliente pesquisa.</h2>
+
+          <p>
+            A maioria dos negócios em Volta Redonda já tem alguma coisa online: perfil no Instagram, número de WhatsApp, talvez até um cadastro no Google. O que quase ninguém tem é um lugar onde o cliente possa pesquisar antes de decidir. E essa etapa de pesquisa acontece mais do que parece.
+          </p>
+
+          <p>
+            Quando alguém pesquisa seu nome ou seu serviço no Google antes de te chamar, o que aparece — ou não aparece — já entrou na decisão dela. Se só existe um perfil de Instagram, ela não tem muito pra comparar você com quem também apareceu na busca.
+          </p>
+
+          <!-- Destaque de Dados de Mercado com Fonte Auditável -->
+          <div class="data-callout">
+            <div class="data-callout-stat">
+              <span class="data-callout-number">45%</span>
+              <span class="data-callout-text">dos consumidores brasileiros pesquisam sobre uma empresa no Google antes de fechar negócio. Outros 73% pesquisam especificamente a reputação da marca.</span>
+            </div>
+            <p style="margin: 0; font-size: 0.95rem; color: var(--color-text-body); line-height: 1.6;">
+              O mesmo levantamento aponta que leads vindos de indicação — que costuma incluir alguém que "achou confiável" depois de pesquisar — convertem cerca de 30% a mais do que contatos frios vindos apenas de anúncios ou redes sociais.
+            </p>
+            <span class="data-callout-source">Fonte: Pesquisa Opinion Box com Buscar ID (2.100+ entrevistados)</span>
           </div>
-          <h4>Lentidão Operacional</h4>
-          <p>Excesso de scripts e plataformas pesadas comprometem a velocidade e os indicadores do Google Core Web Vitals.</p>
-        </div>
-        <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+
+          <h2>Por que quem pesquisa mais costuma ser um cliente melhor</h2>
+
+          <p>
+            Não existe uma pesquisa dizendo exatamente "cliente que vê site confia mais". Mas dá pra sustentar o raciocínio de outro jeito: alguém disposto a pesquisar, comparar preço e ler sobre a empresa antes de ligar está decidindo de forma mais racional do que quem simplesmente chama o primeiro contato que aparece.
+          </p>
+
+          <p>
+            Pra você, isso costuma significar duas coisas. A conversa no WhatsApp fica mais curta, porque a pessoa já entendeu o que você faz antes de perguntar. E quem chega dessa forma tende a discutir menos o preço, porque já entendeu o motivo dele antes de perguntar quanto custa.
+          </p>
+
+          <h2>Ter uma página simples não é a mesma coisa que ter um site institucional</h2>
+
+          <p>
+            Uma dúvida que aparece bastante: "eu já tenho um link na bio ou uma página simples, isso não resolve?"
+          </p>
+
+          <p>
+            Resolve parte do problema. A diferença está na profundidade. Um site institucional tem página própria pra cada serviço, uma seção sobre a empresa, formas de contato, localização — e, quando bem construído, conteúdo que aparece no Google quando alguém pesquisa pelo problema que você resolve, não só pelo nome da sua empresa.
+          </p>
+
+          <p>
+            Isso muda o tipo de cliente que chega até você. Ao invés de depender só de quem já te conhece ou foi indicado, o site vira uma porta pra quem está procurando o serviço sem nunca ter ouvido falar da sua empresa.
+          </p>
+
+          <!-- Imagem 2: Comparativo Link na bio vs Site institucional -->
+          <figure class="editorial-figure">
+            <img src="assets/images/servicos/comparativo_link_vs_site.jpg" alt="Comparação visual entre uma página de link simplificada e um site institucional completo com seções" width="1200" height="675" loading="lazy">
+            <figcaption class="editorial-caption">
+              Comparativo de profundidade: enquanto o link de bio reúne apenas dois atalhos, o site institucional constrói relevância em páginas individuais de serviços, mapa local e conteúdo informativo.
+            </figcaption>
+          </figure>
+
+          <h2>O que costuma travar as pessoas na hora de decidir por um site</h2>
+
+          <div class="objections-list">
+            <div class="objection-item">
+              <div class="objection-title">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                "Meu Instagram já faz esse papel."
+              </div>
+              <p class="objection-desc">
+                Redes sociais são boas pra engajamento, mas o alcance depende do algoritmo do dia. O site fica no ar independente disso — é um espaço que você controla.
+              </p>
+            </div>
+
+            <div class="objection-item">
+              <div class="objection-title">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                "Site é caro e demorado, meu WhatsApp já resolve o suficiente."
+              </div>
+              <p class="objection-desc">
+                O WhatsApp fecha negócio. O que ele não faz é a etapa anterior, a de pesquisa, que os dados acima mostram que já acontece, com ou sem sua empresa participando dela.
+              </p>
+            </div>
+
+            <div class="objection-item">
+              <div class="objection-title">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                "Vou montar um site de graça em algum construtor automático depois."
+              </div>
+              <p class="objection-desc">
+                Dá pra fazer. O problema é que a maioria dessas plataformas gera uma presença visual, mas não uma estrutura pensada pra aparecer nas buscas do Google. Custa pouco e é achado por quase ninguém que ainda não sabia o nome da empresa.
+              </p>
+            </div>
           </div>
-          <h4>Ausência de Semântica</h4>
-          <p>Falta de marcações adequadas e schemas impede o Google de interpretar a área geográfica e a oferta da empresa.</p>
-        </div>
-        <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+
+          <h2>O que entra no serviço de Site Institucional</h2>
+
+          <p>
+            O trabalho é criar sites com estrutura profissional, responsiva pra celular e otimizada pra SEO — com página dedicada pra cada serviço que a empresa oferece e um espaço de blog, pra aparecer em diferentes buscas relacionadas ao setor, não só quando alguém já procura pelo nome.
+          </p>
+
+          <div class="scope-box">
+            <h4>Estrutura técnica entregue no projeto:</h4>
+            <div class="scope-grid">
+              <div class="scope-item">
+                <div class="scope-item-title">
+                  <svg viewBox="0 0 20 20" width="18" height="18" fill="var(--color-primary)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Página por Serviço
+                </div>
+                <p>URLs individuais com textos e títulos semânticos próprios para atrair buscas locais específicas.</p>
+              </div>
+
+              <div class="scope-item">
+                <div class="scope-item-title">
+                  <svg viewBox="0 0 20 20" width="18" height="18" fill="var(--color-primary)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Mobile-First Real
+                </div>
+                <p>Carregamento imediato no 4G, botões confortáveis de toque e sem layouts travados.</p>
+              </div>
+
+              <div class="scope-item">
+                <div class="scope-item-title">
+                  <svg viewBox="0 0 20 20" width="18" height="18" fill="var(--color-primary)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  SEO Local e Schema
+                </div>
+                <p>Marcação de dados LocalBusiness, geolocalização e integração com mapa da região.</p>
+              </div>
+
+              <div class="scope-item">
+                <div class="scope-item-title">
+                  <svg viewBox="0 0 20 20" width="18" height="18" fill="var(--color-primary)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Espaço para Blog
+                </div>
+                <p>Área editorial para publicar artigos e capturar pesquisas informativas do seu setor.</p>
+              </div>
+            </div>
           </div>
-          <h4>Erros de UX</h4>
-          <p>Navegação confusa sem chamadas diretas para ação faz potenciais clientes abandonarem a página sem fazer contato.</p>
-        </div>
+
+          <p>
+            É pensado pra negócio que precisa de presença digital sólida e que cresce com o tempo. Não cobre loja virtual nem e-commerce — isso pede outra estrutura.
+          </p>
+
+          <h2>Pra quem isso faz sentido agora</h2>
+
+          <div class="fit-cards-grid">
+            <div class="fit-card positive">
+              <div class="fit-card-header">
+                <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                Vale a pena se:
+              </div>
+              <p>
+                Sua empresa já recebe cliente por indicação ou rede social, mas sente que perde negócio pra concorrente que parece mais preparado na hora da comparação. Também vale se seu serviço tem ticket mais alto, onde o cliente naturalmente pesquisa antes de fechar. Ou se você simplesmente quer parar de depender de indicação como única fonte.
+              </p>
+            </div>
+
+            <div class="fit-card negative">
+              <div class="fit-card-header">
+                <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+                Ainda não é o momento se:
+              </div>
+              <p>
+                Sua empresa vende exclusivamente por relacionamento direto ou balcão de rua, sem nenhuma necessidade de captar cliente por pesquisa online. Ou se o que você precisa, na verdade, é de uma loja virtual com checkout para vender produtos físicos — aí a estrutura é outra.
+              </p>
+            </div>
+          </div>
+
+          <h2>Perguntas frequentes</h2>
+
+          <div class="faq-article-list">
+            <div class="faq-article-item">
+              <div class="faq-article-question">Um site substitui minhas redes sociais?</div>
+              <p class="faq-article-answer">
+                Não substitui. As redes geram relacionamento e alcance. O site é onde quem foi impactado por elas, ou te achou numa busca, se aprofunda antes de decidir.
+              </p>
+            </div>
+
+            <div class="faq-article-item">
+              <div class="faq-article-question">Quanto tempo até o site dar resultado?</div>
+              <p class="faq-article-answer">
+                Depende do que conta como resultado pra você. Credibilidade, o site já entrega desde o primeiro dia — qualquer pessoa que pesquisar seu nome vai encontrá-lo. Aparecer organicamente nas buscas do Google é mais lento, e varia com a concorrência do seu setor: normalmente de algumas semanas a alguns meses.
+              </p>
+            </div>
+
+            <div class="faq-article-item">
+              <div class="faq-article-question">Vou precisar postar toda semana num blog pra isso funcionar?</div>
+              <p class="faq-article-answer">
+                Não é obrigatório pro site funcionar como cartão de visita. Mas cada conteúdo novo aumenta a chance de aparecer em mais buscas — é um investimento que se acumula.
+              </p>
+            </div>
+
+            <div class="faq-article-item">
+              <div class="faq-article-question">Serve pra loja física também?</div>
+              <p class="faq-article-answer">
+                Serve, principalmente pra reforçar credibilidade e centralizar informação — endereço, horário, serviços, diferenciais — num lugar que o cliente confere antes ou durante a decisão de compra.
+              </p>
+            </div>
+          </div>
+
+          <!-- BANNER DE CTA NO FINAL DO ARTIGO -->
+          <div class="service-cta-banner">
+            <h3>Quer ter um lugar onde seu cliente te encontra e já chega convencido, antes mesmo de falar com você?</h3>
+            <p>Converse conosco diretamente no WhatsApp para entender como seria a estrutura do site ideal para a sua empresa em Volta Redonda e região.</p>
+            <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Quero%20saber%20como%20ficaria%20meu%20site." class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.83.81 2.8.81h.005c3.181 0 5.767-2.586 5.768-5.766.001-3.182-2.585-5.768-5.768-5.768zm3.364 8.243c-.144.405-.837.774-1.17.824-.312.046-.718.067-1.155-.072-.271-.086-.622-.224-1.077-.421-1.921-.832-3.17-2.766-3.266-2.894-.096-.128-.781-1.038-.781-1.98 0-.943.493-1.408.669-1.603.176-.195.385-.244.513-.244.128 0 .256.001.369.006.118.005.276-.045.433.332.16.385.545 1.328.593 1.425.048.097.08.21.016.337-.064.128-.096.208-.192.32-.096.113-.203.251-.29.337-.097.096-.198.2-.086.393.112.193.499.823 1.072 1.334.738.658 1.36.862 1.553.958.193.097.305.081.417-.048.113-.128.482-.562.61-.755.128-.193.257-.161.433-.096.177.064 1.123.53 1.316.626.193.097.321.145.369.225.048.081.048.466-.096.871z"/></svg>
+              Quero saber como ficaria meu site
+            </a>
+          </div>
+
+        </article>
+
+        <!-- SIDEBAR DE NAVEGAÇÃO ENTRE SERVIÇOS -->
+        <aside class="service-sidebar">
+          <div class="service-sidebar-card">
+            <h4>Outros Serviços</h4>
+            <ul class="service-sidebar-links">
+              <li>
+                <a href="site-institucional" class="active">
+                  <span>Site Institucional</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="google-meu-negocio">
+                  <span>Google Meu Negócio</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="gestao-google-meu-negocio">
+                  <span>Gestão de Google Meu Negócio</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="landing-pages">
+                  <span>Landing Pages</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="mini-site">
+                  <span>Mini-Site / Link da Bio</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="auditoria-presenca-digital">
+                  <span>Auditoria Gratuita</span>
+                  <span>→</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-sidebar-highlight">
+            <p><strong>Metodologia Completa:</strong> Se você quer integrar seu site ao Google Maps e construir um posicionamento local contínuo, conheça o <a href="pdl" style="color: var(--color-primary); font-weight:700;">Protocolo de Destaque Local (PDL)</a>.</p>
+          </div>
+
+          <div class="service-sidebar-card">
+            <h4>Precisa de ajuda rápida?</h4>
+            <p style="font-size: 0.9rem; color: var(--color-text-body); line-height: 1.6; margin-bottom: 16px;">
+              Fale diretamente com o estrategista responsável para tirar dúvidas sobre o seu projeto web.
+            </p>
+            <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20sites." class="btn btn-outline" style="width:100%; text-align:center; font-size:0.88rem; padding: 12px 16px;" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+          </div>
+        </aside>
+
       </div>
     </div>
-  </section>
+  </main>
 
-  <!-- SEÇÃO 3: ENTREGÁVEIS -->
-  <section class="lp-section lp-section-alt" id="entregaveis">
+  <!-- FOOTER OFICIAL COMPLETO DO SITE -->
+  <footer class="footer">
     <div class="container">
-      <div class="lp-section-title fade-up">
-        <span class="lp-label">Escopo Técnico</span>
-        <h2>O que contempla nossa engenharia de sites institucionais</h2>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo/logo-original.webp" alt="C.E. Afonso Soluções Digitais" style="max-width: 240px; margin-bottom: 15px;">
+          <p>Estratégia de marketing e posicionamento digital para negócios locais. Volta Redonda e atendimento em todo o Brasil.</p>
+        </div>
+        <div>
+          <h4>Conecte-se</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/ocarloseafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Instagram</a></li>
+            <li><a href="https://www.facebook.com/ocarloseafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></li>
+            <li><a href="https://www.youtube.com/@ocarloseafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg> YouTube</a></li>
+            <li><a href="https://www.tiktok.com/@ocarlosEafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> TikTok</a></li>
+            <li><a href="https://substack.com/@ocarloseafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg> Substack</a></li>
+            <li><a href="https://chat.whatsapp.com/BSHBsM71FJJ2amvvn8ocjy" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Grupo VIP WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="/">Início</a></li>
+            <li><a href="sobre">Sobre</a></li>
+            <li><a href="servicos">Serviços</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contato">Contato</a></li>
+            <li><a href="privacy">Política de Privacidade</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <div class="footer-contact-item"><span>Volta Redonda - RJ</span></div>
+          <div class="footer-contact-item"><span><a href="tel:+5524992074661" style="color:inherit;">(24) 99207-4661</a></span></div>
+          <div class="footer-contact-item"><span>contato@ceafonso.com.br</span></div>
+          <div class="footer-contact-item" style="margin-top:8px;font-size:0.85rem;color:var(--color-text-muted);"><span>CNPJ: 68.894.903/0001-05</span></div>
+        </div>
       </div>
-
-      <div class="lp-pillars fade-up">
-        <div class="lp-pillar">
-          <div class="lp-pillar-number">1</div>
-          <h3>Código Otimizado</h3>
-          <p>Desenvolvimento limpo, leve e sem dependência de temas pesados, garantindo nota máxima de velocidade.</p>
-        </div>
-        <div class="lp-pillar">
-          <div class="lp-pillar-number">2</div>
-          <h3>SEO On-Page Local</h3>
-          <p>Estruturação de títulos, metatags, mapa do site em XML e Schemas do Schema.org para o Google entender a região.</p>
-        </div>
-        <div class="lp-pillar">
-          <div class="lp-pillar-number">3</div>
-          <h3>Conversão Integrada</h3>
-          <p>Botões estratégicos de WhatsApp, formulários leves e design responsivo perfeito em todos os smartphones.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="lp-cta-final" id="cta-final">
-    <div class="container">
-      <h2 class="fade-up">Eleve a Presença Digital da Sua Empresa no Google</h2>
-      <p class="fade-up">Solicite um orçamento para a criação do seu site institucional e garanta um ativo de alta conversão.</p>
-      <div class="lp-cta-group centered fade-up" style="margin-top: 28px;">
-        <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20site%20institucional." class="btn-lp btn-lp-white" target="_blank" rel="noopener noreferrer" id="cta-final-btn">→ Solicitar Orçamento de Site</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER SIMPLIFICADO -->
-  <footer class="lp-footer">
-    <div class="container">
-      <div class="lp-footer-inner">
-        <a href="/" class="lp-footer-logo">
-          <img src="assets/images/logo/logo-original.webp" alt="C.E. Afonso Soluções Digitais">
-        </a>
-        <div class="lp-footer-center">
-          &copy; 2026 C.E. Afonso Soluções Digitais. CNPJ: 68.894.903/0001-05. Todos os direitos reservados. Volta Redonda - RJ.
-        </div>
-        <a href="https://wa.me/5524992074661" class="lp-footer-whatsapp" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Falar no WhatsApp
-        </a>
+      <div class="footer-bottom">
+        <p>&copy; 2026 C.E. Afonso Soluções Digitais. CNPJ: 68.894.903/0001-05. Todos os direitos reservados. Volta Redonda - RJ</p>
       </div>
     </div>
   </footer>
 
-  <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20site%20institucional." class="whatsapp-float" aria-label="Contato via WhatsApp" target="_blank" rel="noopener noreferrer">
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5524992074661" class="whatsapp-float" aria-label="Contato via WhatsApp" target="_blank" rel="noopener noreferrer">
     <span class="whatsapp-tooltip">Fale conosco!</span>
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
-  <!-- SCRIPTS -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const header = document.getElementById('lp-header');
-    if (header) {
-      window.addEventListener('scroll', function() {
-        header.classList.toggle('scrolled', window.scrollY > 30);
-      });
-    }
-
-    const fadeEls = document.querySelectorAll('.fade-up');
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-      fadeEls.forEach(function(el) { observer.observe(el); });
-    } else {
-      fadeEls.forEach(function(el) { el.classList.add('visible'); });
-    }
-
-    const counters = document.querySelectorAll('.lp-counter');
-    if ('IntersectionObserver' in window && counters.length > 0) {
-      const counterObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            const counter = entry.target;
-            const target = parseInt(counter.getAttribute('data-target'), 10);
-            const duration = 1800;
-            const startTime = performance.now();
-
-            function updateCounter(currentTime) {
-              const elapsed = currentTime - startTime;
-              const progress = Math.min(elapsed / duration, 1);
-              const eased = 1 - Math.pow(1 - progress, 3);
-              counter.textContent = Math.floor(eased * target);
-              if (progress < 1) {
-                requestAnimationFrame(updateCounter);
-              } else {
-                counter.textContent = target;
-              }
-            }
-
-            requestAnimationFrame(updateCounter);
-            counterObserver.unobserve(counter);
-          }
-        });
-      }, { threshold: 0.5 });
-      counters.forEach(function(c) { counterObserver.observe(c); });
-    }
-  });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
