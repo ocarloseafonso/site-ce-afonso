@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <style>
+      .bg { fill: #FBF9F8; }
+      .phone { fill: #FFFFFF; stroke: #2D2D2D; stroke-width: 4; rx: 36px; }
+      .title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; font-weight: 800; }
+      .sub { font-family: 'DM Sans', sans-serif; font-size: 14px; fill: #767676; }
+      .insta-header { fill: #FFFFFF; stroke: #E8E3E1; stroke-width: 1.5; rx: 12px; }
+      .avatar { fill: #C10345; }
+      .link-btn { fill: #25D366; rx: 8px; }
+      .card-box { fill: #FFFFFF; stroke: #E8E3E1; stroke-width: 1.5; rx: 10px; }
+      .text-bold { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; fill: #1A1A1A; }
+      .text-small { font-family: 'DM Sans', sans-serif; font-size: 11px; fill: #767676; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" class="bg"/>
+
+  <!-- Left: Instagram Bio com link -->
+  <g transform="translate(180, 55)">
+    <text x="175" y="30" text-anchor="middle" class="title" fill="#1A1A1A">Perfil no Instagram</text>
+    <text x="175" y="52" text-anchor="middle" class="sub">Origem do tráfego pelo celular</text>
+
+    <!-- Phone mockup -->
+    <rect x="25" y="70" width="300" height="490" class="phone" filter="drop-shadow(0 10px 30px rgba(0,0,0,0.06))"/>
+    
+    <!-- Instagram Profile Header -->
+    <circle cx="85" cy="140" r="32" fill="#F4EFEB" stroke="#C10345" stroke-width="2.5"/>
+    <circle cx="85" cy="140" r="26" class="avatar"/>
+    
+    <text x="135" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-size="14px" font-weight="800" fill="#1A1A1A">suaempresa</text>
+    <rect x="135" y="145" width="60" height="20" fill="#F4EFEB" rx="4"/>
+    <text x="165" y="159" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="10px" font-weight="700" fill="#5C5C5C">Seguindo</text>
+
+    <!-- Bio text -->
+    <g transform="translate(45, 195)">
+      <text x="0" y="15" class="text-bold">Sua Empresa | Volta Redonda</text>
+      <text x="0" y="32" class="text-small">Especialistas em atendimento local</text>
+      <text x="0" y="47" class="text-small">Horário: Seg a Sex das 09h às 18h</text>
+      
+      <!-- Link na bio destacado -->
+      <g transform="translate(0, 62)">
+        <rect width="260" height="34" fill="#FFF7F9" stroke="#F5D2DC" rx="6"/>
+        <circle cx="16" cy="17" r="7" fill="#C10345"/>
+        <text x="32" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="11px" font-weight="700" fill="#C10345">ceafonso.com.br/bio</text>
+      </g>
+    </g>
+
+    <!-- Arrow connecting to right screen -->
+    <path d="M 280 290 Q 340 290 370 290" stroke="#C10345" stroke-width="3" fill="none" stroke-dasharray="6,6"/>
+    <polygon points="375,290 365,284 365,296" fill="#C10345"/>
+  </g>
+
+  <!-- Right: Mini-site / Página Única Mobile -->
+  <g transform="translate(670, 55)">
+    <text x="175" y="30" text-anchor="middle" class="title" fill="#00D2B8">Mini-Site Mobile Organizado</text>
+    <text x="175" y="52" text-anchor="middle" class="sub">Tudo que o cliente precisa para decidir</text>
+
+    <!-- Phone mockup -->
+    <rect x="25" y="70" width="300" height="490" class="phone" stroke="#00D2B8" stroke-width="4" filter="drop-shadow(0 14px 36px rgba(0,210,184,0.18))"/>
+
+    <!-- Cover / Header of Mini-Site -->
+    <rect x="40" y="90" width="270" height="85" fill="#F4F1F2" rx="8"/>
+    <circle cx="175" cy="130" r="24" class="avatar"/>
+    <text x="175" y="165" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12px" font-weight="800" fill="#1A1A1A">Sua Empresa</text>
+
+    <!-- WhatsApp Main Button -->
+    <g transform="translate(45, 185)">
+      <rect width="260" height="42" class="link-btn" filter="drop-shadow(0 4px 10px rgba(37,211,102,0.3))"/>
+      <circle cx="25" cy="21" r="10" fill="#FFF"/>
+      <path d="M21 21 C21 19 23 17 25 17 C27 17 29 19 29 21" stroke="#25D366" stroke-width="2" fill="none"/>
+      <text x="145" y="26" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13px" font-weight="700">Chamar no WhatsApp</text>
+    </g>
+
+    <!-- Services compact list -->
+    <g transform="translate(45, 240)">
+      <rect width="260" height="70" class="card-box"/>
+      <text x="15" y="24" class="text-bold">Principais Serviços &amp; Preços</text>
+      <line x1="15" y1="38" x2="245" y2="38" stroke="#E8E3E1"/>
+      <text x="15" y="54" class="text-small">Catálogo rápido e informações claras</text>
+    </g>
+
+    <!-- Location & Maps compact box -->
+    <g transform="translate(45, 322)">
+      <rect width="260" height="80" class="card-box"/>
+      <text x="15" y="24" class="text-bold">Localização &amp; Como Chegar</text>
+      <rect x="15" y="35" width="230" height="34" fill="#EBF6F4" rx="4"/>
+      <circle cx="35" cy="52" r="8" fill="#00D2B8"/>
+      <text x="55" y="56" font-family="'DM Sans', sans-serif" font-size="11px" font-weight="600" fill="#00A693">Abrir rota no Google Maps</text>
+    </g>
+
+    <!-- Photo gallery shortcut -->
+    <g transform="translate(45, 415)">
+      <rect width="80" height="50" fill="#F4EFEB" rx="6"/>
+      <rect x="90" width="80" height="50" fill="#F4EFEB" rx="6"/>
+      <rect x="180" width="80" height="50" fill="#F4EFEB" rx="6"/>
+    </g>
+
+    <g transform="translate(45, 480)">
+      <rect width="260" height="34" fill="#1A1A1A" rx="6"/>
+      <text x="130" y="22" text-anchor="middle" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11px" font-weight="700">Ver Avaliações dos Clientes</text>
+    </g>
+  </g>
+</svg>

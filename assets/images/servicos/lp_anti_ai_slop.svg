@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <style>
+      .bg { fill: #FBF9F8; }
+      .card-generic { fill: #F0EDF5; stroke: #D4CDDF; stroke-width: 2; rx: 16px; }
+      .card-unique { fill: #FFFFFF; stroke: #C10345; stroke-width: 2.5; rx: 16px; }
+      .title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; font-weight: 800; }
+      .sub { font-family: 'DM Sans', sans-serif; font-size: 14px; fill: #767676; }
+      .tag-bad { fill: #E53935; }
+      .tag-good { fill: #008738; }
+      .text-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 800; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" class="bg"/>
+
+  <!-- Left: Generic AI Template (Bad) -->
+  <g transform="translate(130, 70)">
+    <rect width="420" height="510" class="card-generic" filter="drop-shadow(0 8px 24px rgba(0,0,0,0.05))"/>
+    
+    <!-- Status Badge -->
+    <rect x="25" y="25" width="160" height="30" class="tag-bad" rx="6"/>
+    <text x="105" y="45" text-anchor="middle" class="text-tag">TEMPLATE GENÉRICO</text>
+
+    <!-- Generic Violet/Blue AI gradient block -->
+    <defs>
+      <linearGradient id="aiGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#6E56CF"/>
+        <stop offset="100%" stop-color="#3B82F6"/>
+      </linearGradient>
+    </defs>
+    <rect x="25" y="75" width="370" height="150" fill="url(#aiGrad)" rx="10"/>
+    <circle cx="210" cy="135" r="28" fill="rgba(255,255,255,0.2)"/>
+    <path d="M198 135 L222 135 M210 123 L210 147" stroke="#FFF" stroke-width="3"/>
+    <text x="210" y="195" text-anchor="middle" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13px" font-weight="600">Visual Padronizado de IA</text>
+
+    <!-- Placeholder repetitive text lines -->
+    <g transform="translate(25, 255)">
+      <rect width="370" height="18" fill="#D9D2E3" rx="4"/>
+      <rect y="30" width="320" height="14" fill="#E2DCED" rx="4"/>
+      <rect y="54" width="350" height="14" fill="#E2DCED" rx="4"/>
+      <rect y="78" width="280" height="14" fill="#E2DCED" rx="4"/>
+
+      <!-- 3 identical boxes -->
+      <g transform="translate(0, 115)">
+        <rect width="112" height="60" fill="#E2DCED" rx="6"/>
+        <rect x="129" width="112" height="60" fill="#E2DCED" rx="6"/>
+        <rect x="258" width="112" height="60" fill="#E2DCED" rx="6"/>
+      </g>
+    </g>
+
+    <!-- Red X overlay badge -->
+    <circle cx="375" cy="40" r="18" fill="#E53935"/>
+    <path d="M367 32 L383 48 M383 32 L367 48" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right: Anti-AI Slop LP (Proprietary & Real) -->
+  <g transform="translate(650, 70)">
+    <rect width="420" height="510" class="card-unique" filter="drop-shadow(0 12px 32px rgba(193,3,69,0.12))"/>
+
+    <!-- Status Badge -->
+    <rect x="25" y="25" width="180" height="30" class="tag-good" rx="6"/>
+    <text x="115" y="45" text-anchor="middle" class="text-tag">DIRETRIZ ANTI-AI SLOP</text>
+
+    <!-- Custom branded hero -->
+    <rect x="25" y="75" width="370" height="150" fill="#FFF7F9" stroke="#F5D2DC" rx="10"/>
+    <rect x="45" y="95" width="90" height="20" fill="#C10345" rx="4"/>
+    <text x="90" y="109" text-anchor="middle" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10px" font-weight="700">MARCA REAL</text>
+    <text x="45" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="17px" font-weight="800" fill="#1A1A1A">Identidade Própria e Local</text>
+    <text x="45" y="172" font-family="'DM Sans', sans-serif" font-size="13px" fill="#5C5C5C">Copy humana com dados auditáveis</text>
+    <text x="45" y="194" font-family="'DM Sans', sans-serif" font-size="13px" fill="#5C5C5C">e foco direto no negócio</text>
+
+    <!-- Structured custom section with clear CTA -->
+    <g transform="translate(25, 255)">
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="15px" font-weight="700" fill="#1A1A1A">Estrutura Feita sob Medida</text>
+      
+      <g transform="translate(0, 40)">
+        <rect width="370" height="42" fill="#FBF9F8" stroke="#E8E3E1" rx="6"/>
+        <circle cx="24" cy="21" r="7" fill="#008738"/>
+        <path d="M21 21 L23 23 L27 19" stroke="#FFF" stroke-width="1.8" fill="none"/>
+        <text x="42" y="26" font-family="'DM Sans', sans-serif" font-size="13px" font-weight="600" fill="#1A1A1A">Sem fórmulas prontas ou texto robótico</text>
+      </g>
+
+      <g transform="translate(0, 92)">
+        <rect width="370" height="42" fill="#FBF9F8" stroke="#E8E3E1" rx="6"/>
+        <circle cx="24" cy="21" r="7" fill="#008738"/>
+        <path d="M21 21 L23 23 L27 19" stroke="#FFF" stroke-width="1.8" fill="none"/>
+        <text x="42" y="26" font-family="'DM Sans', sans-serif" font-size="13px" font-weight="600" fill="#1A1A1A">Fontes citadas e evidências de mercado</text>
+      </g>
+
+      <!-- CTA Button -->
+      <rect y="150" width="370" height="48" fill="#C10345" rx="8" filter="drop-shadow(0 4px 12px rgba(193,3,69,0.25))"/>
+      <text x="185" y="180" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14px" font-weight="700">Chamada Concreta para Ação</text>
+    </g>
+
+    <!-- Green Check overlay badge -->
+    <circle cx="375" cy="40" r="18" fill="#008738"/>
+    <path d="M366 40 L372 46 L384 34" stroke="#FFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

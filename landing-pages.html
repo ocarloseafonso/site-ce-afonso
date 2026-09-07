@@ -3,245 +3,334 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Criação de Landing Pages de Alta Conversão | C.E. Afonso</title>
-  <meta name="description" content="Landing pages de alta conversão para anúncios no Google e Meta. Carregamento ultrarrápido, copy persuasiva e foco em gerar contatos diretos no WhatsApp.">
-  <meta name="keywords" content="criação de landing page volta redonda, landing page alta conversão, página de vendas whatsapp, landing page google ads">
+  <title>Criação de Landing Pages em Volta Redonda | C.E. Afonso Soluções Digitais</title>
+  <meta name="description" content="Landing pages personalizadas, com estrutura própria e foco em conversão direta, pra apresentar um serviço ou oferta sem a complexidade de um site completo.">
+  <meta name="keywords" content="criacao de landing pages volta redonda, landing page para conversao, pagina de vendas vr, lp profissional empresas, marketing digital vr">
   <link rel="canonical" href="https://www.ceafonso.com.br/landing-pages">
-  <meta property="og:title" content="Criação de Landing Pages de Alta Conversão | C.E. Afonso">
-  <meta property="og:description" content="Transforme o clique do anúncio em clientes reais chamando no WhatsApp com uma landing page de alta conversão.">
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Criação de Landing Pages em Volta Redonda | C.E. Afonso Soluções Digitais">
+  <meta property="og:description" content="Landing pages personalizadas, com estrutura própria e foco em conversão direta, pra apresentar um serviço ou oferta sem a complexidade de um site completo.">
+  <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.ceafonso.com.br/landing-pages">
   <meta property="og:locale" content="pt_BR">
   <meta name="robots" content="index, follow">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="assets/images/logo/favicon.png?v=5">
   <link rel="shortcut icon" href="assets/images/logo/favicon.png?v=5">
-  <link rel="stylesheet" href="css/pdl-landing.css?v=2">
-  <style>
-    :root {
-      --color-primary: #FF5500;
-      --color-primary-dark: #CC4400;
-      --color-primary-darker: #993300;
-      --color-primary-light: #FF7733;
-      --color-primary-ultra-light: rgba(255, 85, 0, 0.1);
-      --color-primary-ghost: rgba(255, 85, 0, 0.05);
-      --shadow-glow: 0 0 40px rgba(255, 85, 0, 0.25);
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Criação de Landing Pages",
+    "provider": {
+      "@type": "Organization",
+      "name": "C.E. Afonso Soluções Digitais",
+      "url": "https://www.ceafonso.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Volta Redonda",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "serviceType": "Criação de Landing Pages",
+    "areaServed": {
+      "@type": "City",
+      "name": "Volta Redonda"
+    },
+    "description": "Desenvolvimento de landing pages personalizadas em Volta Redonda, com identidade visual própria e foco em conversão direta para uma oferta específica."
+  }
+  </script>
 </head>
 <body data-page="landing-pages">
-
-  <!-- ===== HEADER SIMPLIFICADO ===== -->
-  <header class="lp-header" id="lp-header">
-    <div class="lp-header-inner">
-      <a href="/" class="lp-logo" aria-label="Ir para o site principal">
-        <img src="assets/images/logo/logo-original.webp" alt="C.E. Afonso Soluções Digitais" width="150" height="48">
-      </a>
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <a href="servicos" class="lp-header-back">Serviços</a>
-        <a href="/" class="lp-header-back" id="btn-voltar-site">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
-          Ir para o site
-        </a>
-      </div>
+  <!-- HEADER PADRÃO COMPLETO DO SITE -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo"><img src="assets/images/logo/logo-original.webp?v=4" alt="C.E. Afonso Soluções Digitais" width="160" height="48"></a>
+      <nav class="nav" role="navigation" aria-label="Menu principal">
+        <a href="/" class="nav-link">Início</a>
+        <a href="sobre" class="nav-link">Sobre</a>
+        <a href="servicos" class="nav-link active">Serviços</a>
+        <a href="blog" class="nav-link">Blog</a>
+        <a href="faq" class="nav-link">FAQ</a>
+        <a href="contato" class="nav-link">Contato</a>
+        <a href="https://wa.me/5524992074661" class="btn btn-primary btn-sm header-cta" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
     </div>
+    <div class="nav-overlay"></div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="lp-hero" id="hero">
-    <div class="container lp-hero-content">
-      <div class="lp-badge-row fade-up">
-        <span class="lp-badge">CONVERSÃO DE TRÁFEGO • ANTI-AI SLOP</span>
-      </div>
-      <h1 class="fade-up">Landing Pages de Alta Conversão Projetadas <span>Sem Fórmulas Robóticas</span></h1>
-      <p class="lp-hero-sub fade-up">Criamos páginas de destino objetivas, ultrarrápidas e com engenharia de conversão sem 'AI Slop' — direcionando o tráfego de anúncios diretamente para conversas comerciais qualificadas no seu WhatsApp.</p>
-      <div class="lp-cta-group fade-up">
-        <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20projeto%20de%20Landing%20Page%20de%20alta%20convers%C3%A3o." class="btn-lp btn-lp-primary btn-lp-pulse" target="_blank" rel="noopener noreferrer" id="cta-hero">→ Solicitar Projeto de Landing Page</a>
-      </div>
+  <!-- PAGE HERO DO SITE -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="/">Início</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="servicos">Serviços</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Landing Pages</span>
+      </nav>
+      <h1>Landing Pages em Volta Redonda</h1>
+      <p>Páginas focadas em um único objetivo — apresentar sua oferta e levar o visitante a agir — sem a estrutura completa de um site institucional.</p>
     </div>
   </section>
 
-  <!-- SEÇÃO DE DADOS DE MERCADO COM FONTES -->
-  <section class="lp-section lp-section-alt" id="dados">
+  <!-- ARTIGO EDITORIAL DE SERVIÇO COM SIDEBAR -->
+  <main class="service-article-wrapper">
     <div class="container">
-      <div class="lp-section-title fade-up">
-        <span class="lp-label">Eficiência de Campanhas</span>
-        <h2>O impacto da experiência de destino na conversão de tráfego pago</h2>
-      </div>
+      <div class="service-article-grid">
+        
+        <!-- CONTEÚDO PRINCIPAL DO ARTIGO -->
+        <article class="service-article-main">
+          <h2>Landing Pages em Volta Redonda: uma página pra uma única decisão</h2>
 
-      <div class="lp-stats-grid fade-up">
-        <div class="lp-stat-card">
-          <div class="lp-stat-number"><span class="lp-counter" data-target="76">0</span>%</div>
-          <div class="lp-stat-label">das buscas locais em smartphones resultam em ação comercial em até 24h quando direcionadas adequadamente</div>
-          <span class="lp-stat-source">Fonte: Think with Google</span>
-        </div>
-        <div class="lp-stat-card">
-          <div class="lp-stat-number"><span class="lp-counter" data-target="53">0</span>%</div>
-          <div class="lp-stat-label">dos usuários abandonam uma página se o tempo de resposta exceder 3 segundos</div>
-          <span class="lp-stat-source">Fonte: Google / Think with Google</span>
-        </div>
-        <div class="lp-stat-card">
-          <div class="lp-stat-number"><span class="lp-counter" data-target="62">0</span>%</div>
-          <div class="lp-stat-label">dos consumidores ignoram páginas com discursos genéricos ou promessas sem embasamento técnico</div>
-          <span class="lp-stat-source">Fonte: BrightLocal Consumer Survey 2026</span>
-        </div>
-      </div>
+          <p class="service-article-lead">
+            Um site institucional apresenta a empresa inteira. Uma landing page faz o oposto: existe pra apresentar uma única oferta, um único serviço, e conduzir o visitante a uma única ação. Essa diferença de foco é o que costuma mudar o resultado.
+          </p>
+
+          <!-- Imagem 1 -->
+          <figure class="editorial-figure">
+            <img src="assets/images/servicos/lp_comparativo_site_vs_lp.svg" alt="Comparativo visual entre site com menu de várias opções e landing page focada em conversão direta" width="1200" height="675" loading="lazy">
+            <figcaption class="editorial-caption">
+              Diferença de objetivo: o site institucional oferece navegação aberta entre várias páginas; a landing page direciona a atenção para uma única ação de contato.
+            </figcaption>
+          </figure>
+
+          <h2>Por que uma página com um único objetivo converte mais</h2>
+
+          <p>
+            Página com menu, várias seções e vários caminhos possíveis dá liberdade pro visitante — inclusive liberdade pra sair sem fazer nada. Uma landing page corta essa liberdade de propósito: tira a navegação, remove distração, e deixa claro qual é o próximo passo.
+          </p>
+
+<div class="data-callout">
+  <div class="data-callout-stat">
+    <span class="data-callout-number">19,9%</span>
+    <span class="data-callout-text">é a taxa média de conversão das landing pages criadas na plataforma RD Station, uma das maiores referências de marketing digital no Brasil.</span>
+  </div>
+  <p style="margin: 0; font-size: 0.95rem; color: var(--color-text-body); line-height: 1.6;">
+    Outro levantamento da HubSpot mostra que empresas que aumentam o número de landing pages dedicadas de 10 para 15 chegam a ter 55% mais conversões — o ganho vem justamente de ter uma página própria pra cada oferta, em vez de uma página genérica tentando falar com todo mundo.
+  </p>
+  <span class="data-callout-source">Fontes: RD Station Marketing (dados de plataforma) e HubSpot</span>
+</div>
+
+          <h2>O problema de landing page com "cara de inteligência artificial"</h2>
+
+          <p>
+            Grande parte das landing pages que aparecem por aí hoje seguem o mesmo molde: mesmo gradiente, mesmo ícone genérico, mesma estrutura de frase de efeito repetida. Isso não é só uma questão estética — quando a página parece genérica, a oferta também parece genérica, e a credibilidade cai antes mesmo do visitante ler o texto.
+          </p>
+
+          <p>
+            Cada landing page desenvolvida aqui segue uma diretriz interna chamada de tecnologia Anti-AI Slop: nenhuma página sai com identidade visual copiada de template, e o texto passa por um processo de revisão específico pra eliminar os padrões óbvios de escrita automatizada.
+          </p>
+
+          <!-- Imagem 2 -->
+          <figure class="editorial-figure">
+            <img src="assets/images/servicos/lp_anti_ai_slop.svg" alt="Comparação entre template genérico de página e landing page com identidade e texto exclusivos" width="1200" height="675" loading="lazy">
+            <figcaption class="editorial-caption">
+              Argumentação autêntica versus templates genéricos: páginas construídas com evidências reais e foco em decisão convertem mais.
+            </figcaption>
+          </figure>
+
+          <h2>O que costuma travar essa decisão</h2>
+
+<div class="objections-list">
+  <div class="objection-item">
+    <div class="objection-title">"Eu já tenho site, não preciso de landing page também."</div>
+    <p class="objection-desc">O site apresenta a empresa inteira. A landing page serve pra situações específicas — uma campanha, um lançamento, uma promoção pontual — onde você quer o visitante focado numa única decisão, sem se distrair navegando pelo resto do site.</p>
+  </div>
+  <div class="objection-item">
+    <div class="objection-title">"Landing page é só pra quem faz anúncio pago."</div>
+    <p class="objection-desc">Funciona muito bem com anúncio pago, mas também serve pra link de bio, campanha de indicação, ou qualquer situação em que você quer direcionar alguém pra uma decisão específica sem distração.</p>
+  </div>
+  <div class="objection-item">
+    <div class="objection-title">"Todas essas páginas parecem iguais mesmo, não tem muito o que fazer."</div>
+    <p class="objection-desc">Parecem porque a maioria usa o mesmo tipo de ferramenta e o mesmo tipo de texto gerado em massa. Uma página com identidade visual própria e texto revisado manualmente foge desse padrão — e se destaca justamente por isso.</p>
+  </div>
+</div>
+
+          <h2>O que entra no serviço de Landing Page</h2>
+
+<div class="scope-box">
+  <h4>O que é desenvolvido no projeto:</h4>
+  <div class="scope-grid">
+    <div class="scope-item">
+      <div class="scope-item-title">Estrutura Focada em Conversão</div>
+      <p>Página única, sem menu de navegação, guiando o visitante direto pra ação desejada.</p>
     </div>
-  </section>
+    <div class="scope-item">
+      <div class="scope-item-title">Identidade Visual Própria</div>
+      <p>Layout desenvolvido especificamente pra sua oferta, sem template genérico reaproveitado.</p>
+    </div>
+    <div class="scope-item">
+      <div class="scope-item-title">Texto Estratégico</div>
+      <p>Copy escrita e revisada manualmente, sem os padrões repetitivos de texto gerado em massa.</p>
+    </div>
+    <div class="scope-item">
+      <div class="scope-item-title">Responsiva e Rápida</div>
+      <p>Carregamento ágil no celular, já que a maior parte do tráfego de campanha chega por lá.</p>
+    </div>
+  </div>
+</div>
 
-  <!-- SEÇÃO 2: AGITAÇÃO DA DOR -->
-  <section class="lp-section" id="problema">
-    <div class="container">
-      <div class="lp-section-title fade-up">
-        <span class="lp-label">O Gargalo das Campanhas</span>
-        <h2>Perdas de conversão geradas por páginas de destino inadequadas</h2>
-      </div>
+          <h2>Pra quem isso faz sentido agora</h2>
 
-      <div class="lp-pain-cards fade-up">
-        <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+<div class="fit-cards-grid">
+  <div class="fit-card positive">
+    <div class="fit-card-header">Vale a pena se:</div>
+    <p>Você vai rodar uma campanha, lançamento ou promoção específica e precisa de um lugar direto pra mandar o tráfego. Também vale se você quer uma página mais objetiva que o site institucional pra usar no link da bio de uma campanha pontual.</p>
+  </div>
+  <div class="fit-card negative">
+    <div class="fit-card-header">Ainda não é o momento se:</div>
+    <p>Você precisa apresentar a empresa como um todo, com vários serviços e páginas — nesse caso, o site institucional é a estrutura certa, não a landing page.</p>
+  </div>
+</div>
+
+          <h2>Perguntas frequentes</h2>
+
+<div class="faq-article-list">
+  <div class="faq-article-item">
+    <div class="faq-article-question">Landing page substitui o site da empresa?</div>
+    <p class="faq-article-answer">Não. Ela serve pra uma oferta ou campanha específica. O site institucional continua sendo o lugar onde a empresa se apresenta de forma completa.</p>
+  </div>
+  <div class="faq-article-item">
+    <div class="faq-article-question">Preciso ter anúncio pago pra usar landing page?</div>
+    <p class="faq-article-answer">Não é obrigatório. Funciona bem também com tráfego de redes sociais, indicação ou link direto, sempre que o objetivo for uma ação específica.</p>
+  </div>
+  <div class="faq-article-item">
+    <div class="faq-article-question">O que é a tecnologia Anti-AI Slop mencionada?</div>
+    <p class="faq-article-answer">É a diretriz interna aplicada em toda landing page desenvolvida aqui, pra evitar visual e texto genéricos — cada página recebe identidade própria e passa por revisão específica de escrita.</p>
+  </div>
+  <div class="faq-article-item">
+    <div class="faq-article-question">Dá pra usar a mesma landing page pra vários públicos?</div>
+    <p class="faq-article-answer">Dá, mas o resultado costuma ser melhor com uma página por oferta ou público específico — é justamente esse foco que aumenta a taxa de conversão.</p>
+  </div>
+</div>
+
+<div class="service-cta-banner">
+  <h3>Tem uma oferta ou campanha que precisa de uma página só pra ela?</h3>
+  <p>Fale com a gente no WhatsApp e entenda como ficaria a landing page ideal pro seu objetivo.</p>
+  <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Quero%20saber%20sobre%20cria%C3%A7%C3%A3o%20de%20landing%20page." class="btn-whatsapp" target="_blank" rel="noopener noreferrer">Quero criar minha landing page</a>
+</div>
+        </article>
+
+        <!-- SIDEBAR DE NAVEGAÇÃO ENTRE SERVIÇOS -->
+        <aside class="service-sidebar">
+          <div class="service-sidebar-card">
+            <h4>Outros Serviços</h4>
+            <ul class="service-sidebar-links">
+              <li>
+                <a href="site-institucional">
+                  <span>Site Institucional</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="google-meu-negocio">
+                  <span>Google Meu Negócio</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="gestao-google-meu-negocio">
+                  <span>Gestão de Google Meu Negócio</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="landing-pages" class="active">
+                  <span>Landing Pages</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="mini-site">
+                  <span>Mini-Site / Link da Bio</span>
+                  <span>→</span>
+                </a>
+              </li>
+              <li>
+                <a href="auditoria-presenca-digital">
+                  <span>Auditoria Gratuita</span>
+                  <span>→</span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <h4>Textos Genéricos e 'AI Slop'</h4>
-          <p>Discursos artificiais com clichês de IA reduzem a percepção de autoridade e a confiança do visitante.</p>
-        </div>
-        <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+
+          <div class="service-sidebar-highlight">
+            <p><strong>Metodologia Completa:</strong> Se você quer integrar seus serviços e construir um posicionamento local contínuo no Google, conheça o <a href="pdl" style="color: var(--color-primary); font-weight:700;">Protocolo de Destaque Local (PDL)</a>.</p>
           </div>
-          <h4>Falta de Alinhamento Comercial</h4>
-          <p>Se a página não responde à promessa do anúncio em 3 segundos, o usuário abandona a navegação.</p>
-        </div>
-        <div class="lp-pain-card">
-          <div class="lp-pain-icon-wrapper" style="width:40px;height:40px;margin:0 auto 12px auto;display:flex;align-items:center;justify-content:center;background:var(--color-primary-ultra-light);border-radius:var(--radius-md);">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+
+          <div class="service-sidebar-card">
+            <h4>Precisa de ajuda rápida?</h4>
+            <p style="font-size: 0.9rem; color: var(--color-text-body); line-height: 1.6; margin-bottom: 16px;">
+              Fale diretamente com o estrategista responsável para tirar dúvidas sobre o seu negócio.
+            </p>
+            <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20servi%C3%A7os." class="btn btn-outline" style="width:100%; text-align:center; font-size:0.88rem; padding: 12px 16px;" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
           </div>
-          <h4>Pontos de Fuga</h4>
-          <p>Botões que travam ou falta de parâmetros de rastreamento impedem saber qual campanha deu resultado.</p>
-        </div>
+        </aside>
+
       </div>
     </div>
-  </section>
+  </main>
 
-  <!-- SEÇÃO 3: DIFERENCIAIS -->
-  <section class="lp-section lp-section-alt" id="diferenciais">
+  <!-- FOOTER OFICIAL COMPLETO DO SITE -->
+  <footer class="footer">
     <div class="container">
-      <div class="lp-section-title fade-up">
-        <span class="lp-label">Metodologia sem Slop</span>
-        <h2>Engenharia de Páginas Focada em Retorno Sobre Investimento</h2>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo/logo-original.webp" alt="C.E. Afonso Soluções Digitais" style="max-width: 240px; margin-bottom: 15px;">
+          <p>Estratégia de marketing e posicionamento digital para negócios locais. Volta Redonda e atendimento em todo o Brasil.</p>
+        </div>
+        <div>
+          <h4>Conecte-se</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/ocarloseafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Instagram</a></li>
+            <li><a href="https://www.facebook.com/ocarloseafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></li>
+            <li><a href="https://www.youtube.com/@ocarloseafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg> YouTube</a></li>
+            <li><a href="https://www.tiktok.com/@ocarlosEafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> TikTok</a></li>
+            <li><a href="https://substack.com/@ocarloseafonso" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg> Substack</a></li>
+            <li><a href="https://chat.whatsapp.com/BSHBsM71FJJ2amvvn8ocjy" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Grupo VIP WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="/">Início</a></li>
+            <li><a href="sobre">Sobre</a></li>
+            <li><a href="servicos">Serviços</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contato">Contato</a></li>
+            <li><a href="privacy">Política de Privacidade</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <div class="footer-contact-item"><span>Volta Redonda - RJ</span></div>
+          <div class="footer-contact-item"><span><a href="tel:+5524992074661" style="color:inherit;">(24) 99207-4661</a></span></div>
+          <div class="footer-contact-item"><span>contato@ceafonso.com.br</span></div>
+          <div class="footer-contact-item" style="margin-top:8px;font-size:0.85rem;color:var(--color-text-muted);"><span>CNPJ: 68.894.903/0001-05</span></div>
+        </div>
       </div>
-
-      <div class="lp-pillars fade-up">
-        <div class="lp-pillar">
-          <div class="lp-pillar-number">1</div>
-          <h3>Arquitetura Direta ao Ponto</h3>
-          <p>Estrutura limpa sem distrações de menu, focando a atenção inteiramente na proposta de valor e no contato.</p>
-        </div>
-        <div class="lp-pillar">
-          <div class="lp-pillar-number">2</div>
-          <h3>Textos Autênticos e Embasados</h3>
-          <p>Copywriting autoral com argumentos sólidos e dados de mercado citados, eliminando clichês de inteligência artificial.</p>
-        </div>
-        <div class="lp-pillar">
-          <div class="lp-pillar-number">3</div>
-          <h3>Velocidade Máxima e Analytics</h3>
-          <p>Carregamento instantâneo com tag de rastreamento de conversão configurada para Google Ads e Meta Ads.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="lp-cta-final" id="cta-final">
-    <div class="container">
-      <h2 class="fade-up">Transforme o Tráfego dos Seus Anúncios em Oportunidades Reais no WhatsApp</h2>
-      <p class="fade-up">Solicite um orçamento para a sua Landing Page e pare de desperdiçar verba de campanhas.</p>
-      <div class="lp-cta-group centered fade-up" style="margin-top: 28px;">
-        <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20Landing%20Page." class="btn-lp btn-lp-white" target="_blank" rel="noopener noreferrer" id="cta-final-btn">→ Solicitar Landing Page de Alta Conversão</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER SIMPLIFICADO -->
-  <footer class="lp-footer">
-    <div class="container">
-      <div class="lp-footer-inner">
-        <a href="/" class="lp-footer-logo">
-          <img src="assets/images/logo/logo-original.webp" alt="C.E. Afonso Soluções Digitais">
-        </a>
-        <div class="lp-footer-center">
-          &copy; 2026 C.E. Afonso Soluções Digitais. CNPJ: 68.894.903/0001-05. Todos os direitos reservados. Volta Redonda - RJ.
-        </div>
-        <a href="https://wa.me/5524992074661" class="lp-footer-whatsapp" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Falar no WhatsApp
-        </a>
+      <div class="footer-bottom">
+        <p>&copy; 2026 C.E. Afonso Soluções Digitais. CNPJ: 68.894.903/0001-05. Todos os direitos reservados. Volta Redonda - RJ</p>
       </div>
     </div>
   </footer>
 
-  <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/5524992074661?text=Ol%C3%A1!%20Quero%20uma%20Landing%20Page." class="whatsapp-float" aria-label="Contato via WhatsApp" target="_blank" rel="noopener noreferrer">
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5524992074661" class="whatsapp-float" aria-label="Contato via WhatsApp" target="_blank" rel="noopener noreferrer">
     <span class="whatsapp-tooltip">Fale conosco!</span>
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
-  <!-- SCRIPTS -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const header = document.getElementById('lp-header');
-    if (header) {
-      window.addEventListener('scroll', function() {
-        header.classList.toggle('scrolled', window.scrollY > 30);
-      });
-    }
-
-    const fadeEls = document.querySelectorAll('.fade-up');
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-      fadeEls.forEach(function(el) { observer.observe(el); });
-    } else {
-      fadeEls.forEach(function(el) { el.classList.add('visible'); });
-    }
-
-    const counters = document.querySelectorAll('.lp-counter');
-    if ('IntersectionObserver' in window && counters.length > 0) {
-      const counterObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            const counter = entry.target;
-            const target = parseInt(counter.getAttribute('data-target'), 10);
-            const duration = 1800;
-            const startTime = performance.now();
-
-            function updateCounter(currentTime) {
-              const elapsed = currentTime - startTime;
-              const progress = Math.min(elapsed / duration, 1);
-              const eased = 1 - Math.pow(1 - progress, 3);
-              counter.textContent = Math.floor(eased * target);
-              if (progress < 1) {
-                requestAnimationFrame(updateCounter);
-              } else {
-                counter.textContent = target;
-              }
-            }
-
-            requestAnimationFrame(updateCounter);
-            counterObserver.unobserve(counter);
-          }
-        });
-      }, { threshold: 0.5 });
-      counters.forEach(function(c) { counterObserver.observe(c); });
-    }
-  });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

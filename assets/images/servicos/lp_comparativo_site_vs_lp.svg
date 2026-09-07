@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <style>
+      .bg { fill: #FBF9F8; }
+      .phone { fill: #FFFFFF; stroke: #2D2D2D; stroke-width: 4; rx: 36px; }
+      .screen { fill: #FAFAFA; rx: 24px; }
+      .title-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; font-weight: 800; fill: #1A1A1A; }
+      .sub-text { font-family: 'DM Sans', sans-serif; font-size: 14px; fill: #767676; }
+      .btn-primary { fill: #C10345; rx: 8px; }
+      .btn-sec { fill: #F4EFEB; stroke: #E2DDD9; stroke-width: 1.5; rx: 8px; }
+      .btn-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+      .btn-text-sec { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 600; fill: #5C5C5C; }
+      .box { fill: #FFFFFF; stroke: #E8E3E1; stroke-width: 1.5; rx: 12px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" class="bg"/>
+
+  <!-- Left: Site Institucional (Múltiplas Opções / Risco de Distração) -->
+  <g transform="translate(180, 55)">
+    <text x="175" y="30" text-anchor="middle" class="title-text">Site Institucional</text>
+    <text x="175" y="52" text-anchor="middle" class="sub-text">Múltiplos menus, páginas e caminhos</text>
+
+    <!-- Phone mockup -->
+    <rect x="25" y="70" width="300" height="490" class="phone" filter="drop-shadow(0 10px 30px rgba(0,0,0,0.07))"/>
+    <!-- Menu Bar -->
+    <rect x="40" y="90" width="270" height="42" fill="#FFFFFF" stroke="#E8E3E1" rx="6"/>
+    <circle cx="65" cy="111" r="10" fill="#C10345"/>
+    <line x1="260" y1="104" x2="290" y2="104" stroke="#5C5C5C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="260" y1="111" x2="290" y2="111" stroke="#5C5C5C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="260" y1="118" x2="290" y2="118" stroke="#5C5C5C" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Multiple Content Blocks -->
+    <rect x="40" y="145" width="270" height="70" class="box"/>
+    <text x="55" y="175" class="btn-text-sec" font-weight="700">Apresentação Geral</text>
+    <line x1="55" y1="192" x2="220" y2="192" stroke="#E0DAD6" stroke-width="6" stroke-linecap="round"/>
+
+    <g transform="translate(40, 225)">
+      <rect width="130" height="65" class="box"/>
+      <text x="15" y="32" class="btn-text-sec">Serviço A</text>
+      <line x1="15" y1="46" x2="85" y2="46" stroke="#E0DAD6" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(180, 225)">
+      <rect width="130" height="65" class="box"/>
+      <text x="15" y="32" class="btn-text-sec">Serviço B</text>
+      <line x1="15" y1="46" x2="85" y2="46" stroke="#E0DAD6" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Outros Links -->
+    <rect x="40" y="300" width="270" height="40" class="btn-sec"/>
+    <text x="175" y="325" text-anchor="middle" class="btn-text-sec">Ver Mais Informações</text>
+
+    <rect x="40" y="350" width="270" height="40" class="btn-sec"/>
+    <text x="175" y="375" text-anchor="middle" class="btn-text-sec">Ler Artigos do Blog</text>
+
+    <rect x="40" y="400" width="270" height="40" class="btn-sec"/>
+    <text x="175" y="425" text-anchor="middle" class="btn-text-sec">Localização &amp; Horários</text>
+
+    <!-- Footer link -->
+    <rect x="40" y="470" width="270" height="60" fill="#F4EFEB" rx="6"/>
+    <text x="175" y="505" text-anchor="middle" class="sub-text" font-size="12px">Múltiplos pontos de saída</text>
+  </g>
+
+  <!-- Right: Landing Page (Único Foco e Conversão Direta) -->
+  <g transform="translate(670, 55)">
+    <text x="175" y="30" text-anchor="middle" class="title-text" fill="#C10345">Landing Page Dedicada</text>
+    <text x="175" y="52" text-anchor="middle" class="sub-text">1 oferta exclusiva + 1 ação imediata</text>
+
+    <!-- Phone mockup -->
+    <rect x="25" y="70" width="300" height="490" class="phone" stroke="#C10345" stroke-width="4" filter="drop-shadow(0 14px 36px rgba(193,3,69,0.15))"/>
+
+    <!-- Simplified Header (No Menu) -->
+    <rect x="40" y="90" width="270" height="34" fill="#FFF" rx="6"/>
+    <circle cx="60" cy="107" r="9" fill="#C10345"/>
+    <text x="76" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="11px" font-weight="800" fill="#1A1A1A">OFERTA ESPECÍFICA</text>
+
+    <!-- Hero Offer Section -->
+    <rect x="40" y="135" width="270" height="155" fill="#FFF7F9" stroke="#F5D2DC" stroke-width="1.5" rx="10"/>
+    <rect x="55" y="150" width="80" height="18" fill="#C10345" rx="4"/>
+    <text x="95" y="163" text-anchor="middle" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9px" font-weight="700">FOCO TOTAL</text>
+    
+    <text x="55" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-size="15px" font-weight="800" fill="#1A1A1A">Solução Única e Direta</text>
+    <line x1="55" y1="214" x2="245" y2="214" stroke="#C10345" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+    <line x1="55" y1="228" x2="195" y2="228" stroke="#C10345" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Central Single CTA Button -->
+    <g transform="translate(40, 310)">
+      <rect width="270" height="52" class="btn-primary" filter="drop-shadow(0 6px 16px rgba(193,3,69,0.3))"/>
+      <text x="135" y="32" text-anchor="middle" class="btn-text" font-size="14px">Falar Agora no WhatsApp</text>
+    </g>
+
+    <!-- 3 Short Proof Points -->
+    <g transform="translate(45, 385)">
+      <circle cx="10" cy="10" r="8" fill="#E8F8EE"/>
+      <path d="M6 10 L9 13 L15 7" stroke="#008738" stroke-width="2" fill="none"/>
+      <text x="28" y="14" class="btn-text-sec" font-size="12px">Sem distrações ou links externos</text>
+    </g>
+    <g transform="translate(45, 420)">
+      <circle cx="10" cy="10" r="8" fill="#E8F8EE"/>
+      <path d="M6 10 L9 13 L15 7" stroke="#008738" stroke-width="2" fill="none"/>
+      <text x="28" y="14" class="btn-text-sec" font-size="12px">Decisão rápida e sem atrito</text>
+    </g>
+    <g transform="translate(45, 455)">
+      <circle cx="10" cy="10" r="8" fill="#E8F8EE"/>
+      <path d="M6 10 L9 13 L15 7" stroke="#008738" stroke-width="2" fill="none"/>
+      <text x="28" y="14" class="btn-text-sec" font-size="12px">Maior taxa de conversão</text>
+    </g>
+  </g>
+</svg>

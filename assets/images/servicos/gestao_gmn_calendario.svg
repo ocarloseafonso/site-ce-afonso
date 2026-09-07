@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <style>
+      .bg { fill: #FBF9F8; }
+      .card { fill: #FFFFFF; stroke: #E8E3E1; stroke-width: 2; rx: 16px; }
+      .header-bg { fill: #F4EFEB; }
+      .day-card { fill: #FFFFFF; stroke: #ECE7E4; stroke-width: 1.5; rx: 12px; }
+      .day-active { fill: #FFF7F9; stroke: #C10345; stroke-width: 2; }
+      .text-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 800; fill: #1A1A1A; }
+      .text-day { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 700; fill: #5C5C5C; }
+      .text-day-active { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 800; fill: #C10345; }
+      .text-task { font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600; fill: #1A1A1A; }
+      .text-sub { font-family: 'DM Sans', sans-serif; font-size: 12px; fill: #767676; }
+      .tag-pub { fill: #C10345; }
+      .tag-rev { fill: #008738; }
+      .tag-seo { fill: #0088FF; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" class="bg"/>
+
+  <!-- Main Calendar Container -->
+  <g transform="translate(100, 75)">
+    <rect width="1000" height="525" class="card" filter="drop-shadow(0 8px 24px rgba(0,0,0,0.06))"/>
+    
+    <!-- Top Header -->
+    <path d="M 2 16 Q 2 2 16 2 L 984 2 Q 998 2 998 16 L 998 75 L 2 75 Z" class="header-bg"/>
+    <text x="40" y="48" class="text-title">Rotina Semanal de Gestão no Google Meu Negócio</text>
+    <circle cx="950" cy="40" r="6" fill="#C10345"/>
+    <circle cx="925" cy="40" r="6" fill="#D49400"/>
+    <circle cx="900" cy="40" r="6" fill="#008738"/>
+
+    <!-- Days Columns (Segunda a Sexta) -->
+    <!-- Seg -->
+    <g transform="translate(40, 100)">
+      <rect width="168" height="385" class="day-card day-active"/>
+      <rect x="0" y="0" width="168" height="42" fill="#C10345" rx="10"/>
+      <text x="84" y="26" text-anchor="middle" fill="#FFFFFF" class="text-day-active" font-weight="700">SEGUNDA</text>
+      
+      <!-- Task 1: Publicação -->
+      <g transform="translate(14, 60)">
+        <rect width="140" height="95" rx="8" fill="#FFFFFF" stroke="#E8E3E1"/>
+        <rect x="10" y="10" width="24" height="24" rx="4" class="tag-pub"/>
+        <path d="M16 22 L20 18 L28 18" stroke="#FFF" stroke-width="2" fill="none"/>
+        <text x="40" y="27" class="text-task">Publicação</text>
+        <text x="12" y="55" class="text-sub">Post estratégico com</text>
+        <text x="12" y="72" class="text-sub">serviço e foto nova</text>
+      </g>
+    </g>
+
+    <!-- Ter -->
+    <g transform="translate(228, 100)">
+      <rect width="168" height="385" class="day-card"/>
+      <text x="84" y="28" text-anchor="middle" class="text-day">TERÇA</text>
+      <line x1="20" y1="42" x2="148" y2="42" stroke="#E8E3E1"/>
+      
+      <!-- Task: Monitoramento -->
+      <g transform="translate(14, 60)">
+        <rect width="140" height="80" rx="8" fill="#FBF9F8" stroke="#E8E3E1"/>
+        <text x="12" y="32" class="text-task">Monitoramento</text>
+        <text x="12" y="55" class="text-sub">Checagem de NAP</text>
+      </g>
+    </g>
+
+    <!-- Qua -->
+    <g transform="translate(416, 100)">
+      <rect width="168" height="385" class="day-card day-active"/>
+      <rect x="0" y="0" width="168" height="42" fill="#008738" rx="10"/>
+      <text x="84" y="26" text-anchor="middle" fill="#FFFFFF" class="text-day-active">QUARTA</text>
+
+      <!-- Task: Avaliações -->
+      <g transform="translate(14, 60)">
+        <rect width="140" height="95" rx="8" fill="#FFFFFF" stroke="#E8E3E1"/>
+        <rect x="10" y="10" width="24" height="24" rx="4" class="tag-rev"/>
+        <circle cx="22" cy="22" r="5" fill="#FFF"/>
+        <text x="40" y="27" class="text-task">Avaliações</text>
+        <text x="12" y="55" class="text-sub">Resposta humanizada</text>
+        <text x="12" y="72" class="text-sub">às novas opiniões</text>
+      </g>
+    </g>
+
+    <!-- Qui -->
+    <g transform="translate(604, 100)">
+      <rect width="168" height="385" class="day-card"/>
+      <text x="84" y="28" text-anchor="middle" class="text-day">QUINTA</text>
+      <line x1="20" y1="42" x2="148" y2="42" stroke="#E8E3E1"/>
+
+      <!-- Task: Fotos/Perguntas -->
+      <g transform="translate(14, 60)">
+        <rect width="140" height="80" rx="8" fill="#FBF9F8" stroke="#E8E3E1"/>
+        <text x="12" y="32" class="text-task">Fotos &amp; Q&amp;A</text>
+        <text x="12" y="55" class="text-sub">Tirar dúvidas do cliente</text>
+      </g>
+    </g>
+
+    <!-- Sex -->
+    <g transform="translate(792, 100)">
+      <rect width="168" height="385" class="day-card day-active"/>
+      <rect x="0" y="0" width="168" height="42" fill="#0088FF" rx="10"/>
+      <text x="84" y="26" text-anchor="middle" fill="#FFFFFF" class="text-day-active">SEXTA</text>
+
+      <!-- Task: Relatório de métricas -->
+      <g transform="translate(14, 60)">
+        <rect width="140" height="95" rx="8" fill="#FFFFFF" stroke="#E8E3E1"/>
+        <rect x="10" y="10" width="24" height="24" rx="4" class="tag-seo"/>
+        <text x="40" y="27" class="text-task">Métricas</text>
+        <text x="12" y="55" class="text-sub">Análise de chamadas,</text>
+        <text x="12" y="72" class="text-sub">rotas e buscas locais</text>
+      </g>
+    </g>
+  </g>
+</svg>
