@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <style>
+      .bg { fill: #FBF9F8; }
+      .card { fill: #FFFFFF; stroke: #E2DDD9; stroke-width: 1.5; rx: 16px; filter: drop-shadow(0 10px 25px rgba(0,0,0,0.05)); }
+      .badge-step { fill: #CD0E45; rx: 12px; }
+      .badge-step-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 800; fill: #FFFFFF; letter-spacing: 0.05em; }
+      .title-main { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 800; fill: #1A2332; }
+      .subtitle-main { font-family: 'DM Sans', sans-serif; font-size: 15px; fill: #52637A; }
+      .card-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 700; fill: #1A2332; }
+      .card-desc { font-family: 'DM Sans', sans-serif; font-size: 13.5px; fill: #52637A; line-height: 1.5; }
+      .tag-pill { fill: #F5E8ED; rx: 6px; }
+      .tag-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px; font-weight: 700; fill: #CD0E45; }
+      .mock-box { fill: #F8FAFC; stroke: #E2E8F0; stroke-width: 1; rx: 8px; }
+      .arrow-line { stroke: #CD0E45; stroke-width: 2.5; stroke-dasharray: 6 6; }
+      .arrow-head { fill: #CD0E45; }
+      .star { fill: #F59E0B; }
+    </style>
+  </defs>
+
+  <!-- Fundo suave institucional -->
+  <rect width="1200" height="675" class="bg"/>
+
+  <!-- Título Superior do Infográfico -->
+  <g transform="translate(600, 65)" text-anchor="middle">
+    <text y="0" class="title-main">A Jornada do Cliente no Protocolo de Destaque Local (PDL)</text>
+    <text y="28" class="subtitle-main">Como a integração entre Google Maps, Site Institucional e WhatsApp conduz à contratação previsível</text>
+  </g>
+
+  <!-- ETAPA 1: GOOGLE MAPS / PACK LOCAL -->
+  <g transform="translate(70, 140)">
+    <rect width="320" height="460" class="card"/>
+    
+    <!-- Header do Card 1 -->
+    <rect x="24" y="24" width="76" height="24" class="badge-step"/>
+    <text x="62" y="40" text-anchor="middle" class="badge-step-text">ETAPA 1</text>
+    <text x="24" y="76" class="card-title">1. Descoberta no Mapa</text>
+    <text x="24" y="100" class="card-desc">Captura da busca com intenção local imediata</text>
+
+    <!-- Mockup Visual da Ficha Otimizada -->
+    <g transform="translate(24, 120)">
+      <rect width="272" height="210" class="mock-box"/>
+      
+      <!-- Barra de Busca Google -->
+      <rect x="12" y="12" width="248" height="28" fill="#FFFFFF" stroke="#CBD5E1" rx="14"/>
+      <circle cx="28" cy="26" r="5" fill="#CD0E45"/>
+      <text x="42" y="30" font-family="'DM Sans', sans-serif" font-size="11" fill="#64748B">especialista em volta redonda</text>
+
+      <!-- Ficha em Destaque 1º Lugar -->
+      <rect x="12" y="52" width="248" height="142" fill="#FFFFFF" stroke="#E2E8F0" rx="8"/>
+      
+      <!-- Título da Empresa -->
+      <text x="24" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#1A2332">Sua Empresa em Destaque</text>
+      
+      <!-- Avaliações 5.0 -->
+      <g transform="translate(24, 82)">
+        <text x="0" y="11" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#B45309">5.0</text>
+        <path d="M28 2 l1.8 3.7 4 .6 -2.9 2.8 .7 4 -3.6 -1.9 -3.6 1.9 .7 -4 -2.9 -2.8 4 -.6 z" class="star"/>
+        <path d="M41 2 l1.8 3.7 4 .6 -2.9 2.8 .7 4 -3.6 -1.9 -3.6 1.9 .7 -4 -2.9 -2.8 4 -.6 z" class="star"/>
+        <path d="M54 2 l1.8 3.7 4 .6 -2.9 2.8 .7 4 -3.6 -1.9 -3.6 1.9 .7 -4 -2.9 -2.8 4 -.6 z" class="star"/>
+        <path d="M67 2 l1.8 3.7 4 .6 -2.9 2.8 .7 4 -3.6 -1.9 -3.6 1.9 .7 -4 -2.9 -2.8 4 -.6 z" class="star"/>
+        <path d="M80 2 l1.8 3.7 4 .6 -2.9 2.8 .7 4 -3.6 -1.9 -3.6 1.9 .7 -4 -2.9 -2.8 4 -.6 z" class="star"/>
+        <text x="96" y="11" font-family="'DM Sans', sans-serif" font-size="10" fill="#64748B">(84 avaliações)</text>
+      </g>
+
+      <text x="24" y="116" font-family="'DM Sans', sans-serif" font-size="11" fill="#475569">Categoria técnica correta · Aberto agora</text>
+      <text x="24" y="132" font-family="'DM Sans', sans-serif" font-size="11" fill="#475569">Volta Redonda, RJ · Endereço consistente</text>
+      
+      <!-- Botão Acessar Site -->
+      <rect x="24" y="146" width="105" height="26" fill="#1A2332" rx="4"/>
+      <text x="76" y="163" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#FFFFFF">Acessar Website →</text>
+    </g>
+
+    <!-- Bullet Points Card 1 -->
+    <g transform="translate(24, 345)">
+      <circle cx="6" cy="12" r="3" fill="#CD0E45"/>
+      <text x="16" y="16" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Pack Local do Google em 1º plano</text>
+      
+      <circle cx="6" cy="36" r="3" fill="#CD0E45"/>
+      <text x="16" y="40" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Fotos reais e catálogo de serviços</text>
+
+      <circle cx="6" cy="60" r="3" fill="#CD0E45"/>
+      <text x="16" y="64" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Avaliações autênticas estruturadas</text>
+    </g>
+  </g>
+
+  <!-- CONECTOR 1 -> 2 -->
+  <g transform="translate(390, 350)">
+    <line x1="10" y1="0" x2="42" y2="0" class="arrow-line"/>
+    <polygon points="42,-5 52,0 42,5" class="arrow-head"/>
+  </g>
+
+  <!-- ETAPA 2: SITE INSTITUCIONAL / AUTORIDADE TÉCNICA -->
+  <g transform="translate(440, 140)">
+    <rect width="320" height="460" class="card"/>
+    
+    <!-- Header do Card 2 -->
+    <rect x="24" y="24" width="76" height="24" class="badge-step"/>
+    <text x="62" y="40" text-anchor="middle" class="badge-step-text">ETAPA 2</text>
+    <text x="24" y="76" class="card-title">2. Validação no Site</text>
+    <text x="24" y="100" class="card-desc">Construção de segurança e autoridade técnica</text>
+
+    <!-- Mockup Visual do Site Institucional -->
+    <g transform="translate(24, 120)">
+      <rect width="272" height="210" class="mock-box"/>
+      
+      <!-- Navegação Mockup -->
+      <rect x="12" y="12" width="248" height="26" fill="#FFFFFF" stroke="#CBD5E1" rx="4"/>
+      <circle cx="24" cy="25" r="4" fill="#CD0E45"/>
+      <rect x="34" y="22" width="40" height="6" fill="#1A2332" rx="2"/>
+      <rect x="150" y="22" width="24" height="5" fill="#94A3B8" rx="2"/>
+      <rect x="180" y="22" width="24" height="5" fill="#94A3B8" rx="2"/>
+      <rect x="210" y="19" width="42" height="12" fill="#CD0E45" rx="3"/>
+
+      <!-- Hero Institucional Mockup -->
+      <rect x="12" y="48" width="248" height="146" fill="#FFFFFF" stroke="#E2E8F0" rx="6"/>
+      <rect x="22" y="60" width="85" height="14" class="tag-pill"/>
+      <text x="64" y="71" text-anchor="middle" class="tag-text">BASE SÓLIDA</text>
+      
+      <text x="22" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#1A2332">Solução Especializada</text>
+      <rect x="22" y="104" width="130" height="5" fill="#CBD5E1" rx="2"/>
+      <rect x="22" y="113" width="105" height="5" fill="#E2E8F0" rx="2"/>
+
+      <!-- Grade 2 serviços -->
+      <rect x="22" y="128" width="68" height="48" fill="#F8FAFC" stroke="#E2E8F0" rx="4"/>
+      <rect x="30" y="136" width="30" height="4" fill="#CD0E45" rx="1"/>
+      <rect x="30" y="144" width="48" height="3" fill="#94A3B8" rx="1"/>
+
+      <rect x="96" y="128" width="68" height="48" fill="#F8FAFC" stroke="#E2E8F0" rx="4"/>
+      <rect x="104" y="136" width="30" height="4" fill="#1A2332" rx="1"/>
+      <rect x="104" y="144" width="48" height="3" fill="#94A3B8" rx="1"/>
+
+      <!-- Selo de Autoridade -->
+      <rect x="172" y="128" width="80" height="48" fill="#F1F5F9" stroke="#CBD5E1" rx="4"/>
+      <text x="212" y="150" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#1A2332">Dados NAP</text>
+      <text x="212" y="162" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="8.5" fill="#64748B">Auditados</text>
+    </g>
+
+    <!-- Bullet Points Card 2 -->
+    <g transform="translate(24, 345)">
+      <circle cx="6" cy="12" r="3" fill="#CD0E45"/>
+      <text x="16" y="16" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Páginas individuais para cada serviço</text>
+      
+      <circle cx="6" cy="36" r="3" fill="#CD0E45"/>
+      <text x="16" y="40" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Carregamento ultrarrápido no celular</text>
+
+      <circle cx="6" cy="60" r="3" fill="#CD0E45"/>
+      <text x="16" y="64" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Eliminação de dúvidas antes do contato</text>
+    </g>
+  </g>
+
+  <!-- CONECTOR 2 -> 3 -->
+  <g transform="translate(760, 350)">
+    <line x1="10" y1="0" x2="42" y2="0" class="arrow-line"/>
+    <polygon points="42,-5 52,0 42,5" class="arrow-head"/>
+  </g>
+
+  <!-- ETAPA 3: CONVERSÃO WHATSAPP / FECHAMENTO -->
+  <g transform="translate(810, 140)">
+    <rect width="320" height="460" class="card"/>
+    
+    <!-- Header do Card 3 -->
+    <rect x="24" y="24" width="76" height="24" class="badge-step"/>
+    <text x="62" y="40" text-anchor="middle" class="badge-step-text">ETAPA 3</text>
+    <text x="24" y="76" class="card-title">3. Fechamento WhatsApp</text>
+    <text x="24" y="100" class="card-desc">Atendimento comercial sem ruído ou atrito</text>
+
+    <!-- Mockup Visual do Chat WhatsApp Comercial -->
+    <g transform="translate(24, 120)">
+      <rect width="272" height="210" class="mock-box"/>
+      
+      <!-- Topbar do WhatsApp -->
+      <rect x="12" y="12" width="248" height="34" fill="#075E54" rx="4"/>
+      <circle cx="28" cy="29" r="8" fill="#25D366"/>
+      <text x="44" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Atendimento Comercial</text>
+      <text x="44" y="38" font-family="'DM Sans', sans-serif" font-size="9" fill="#D1FAE5">Online · Pronto para atender</text>
+
+      <!-- Fundo de Mensagens -->
+      <rect x="12" y="48" width="248" height="146" fill="#EFEAE2" rx="4"/>
+      
+      <!-- Balão 1: Cliente qualificado -->
+      <rect x="42" y="60" width="206" height="52" fill="#E7FFDB" rx="6" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.08))"/>
+      <text x="52" y="76" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#111827">"Olá! Pesquisei no Google, vi o</text>
+      <text x="52" y="90" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#111827">site de vocês e quero agendar o</text>
+      <text x="52" y="104" font-family="'DM Sans', sans-serif" font-size="10.5" font-weight="700" fill="#075E54">serviço especializado."</text>
+
+      <!-- Balão 2: Resposta rápida da empresa -->
+      <rect x="22" y="124" width="190" height="42" fill="#FFFFFF" rx="6" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.08))"/>
+      <text x="32" y="140" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#111827">"Perfeito! Já separamos seu</text>
+      <text x="32" y="154" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#111827">horário. Seguem os detalhes..."</text>
+    </g>
+
+    <!-- Bullet Points Card 3 -->
+    <g transform="translate(24, 345)">
+      <circle cx="6" cy="12" r="3" fill="#CD0E45"/>
+      <text x="16" y="16" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Cliente chega pronto e pré-convencido</text>
+      
+      <circle cx="6" cy="36" r="3" fill="#CD0E45"/>
+      <text x="16" y="40" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Menor perda de tempo explicando o básico</text>
+
+      <circle cx="6" cy="60" r="3" fill="#CD0E45"/>
+      <text x="16" y="64" font-family="'DM Sans', sans-serif" font-size="12" fill="#334155">Maior taxa de fechamento comercial</text>
+    </g>
+  </g>
+
+</svg>

@@ -1,0 +1,96 @@
+{
+  "image_path": "C:\\Users\\cadu_\\OneDrive\\Área de Trabalho\\C.E. Afonso Soluções Digitais\\PDL\\_PDL_OFICIAL\\04_PROJETOS_CLIENTES\\CE_Afonso_Solucoes_Digitais_Oficial\\output\\assets\\images\\logo\\logo-dark-fundo.png",
+  "total_visible_pixels": 42345,
+  "percentual_claro_branco": 71.01,
+  "logo_requer_fundo_escuro": true,
+  "cores_cromaticas": [],
+  "cores_neutras": [
+    {
+      "rgb": [
+        205,
+        206,
+        200
+      ],
+      "hex": "#CDCEC8",
+      "count": 5259,
+      "lum": 205.017,
+      "percentage": 0.24
+    },
+    {
+      "rgb": [
+        248,
+        249,
+        236
+      ],
+      "hex": "#F8F9EC",
+      "count": 4347,
+      "lum": 247.219,
+      "percentage": 0.26
+    },
+    {
+      "rgb": [
+        226,
+        227,
+        213
+      ],
+      "hex": "#E2E3D5",
+      "count": 742,
+      "lum": 225.105,
+      "percentage": 0.16
+    }
+  ],
+  "todas_cores_detectadas": [
+    {
+      "rgb": [
+        205,
+        206,
+        200
+      ],
+      "hex": "#CDCEC8",
+      "count": 5259,
+      "lum": 205.017,
+      "percentage": 0.24
+    },
+    {
+      "rgb": [
+        248,
+        249,
+        236
+      ],
+      "hex": "#F8F9EC",
+      "count": 4347,
+      "lum": 247.219,
+      "percentage": 0.26
+    },
+    {
+      "rgb": [
+        226,
+        227,
+        213
+      ],
+      "hex": "#E2E3D5",
+      "count": 742,
+      "lum": 225.105,
+      "percentage": 0.16
+    }
+  ],
+  "css_sugerido": "/* ==========================================================================\n   PALETA OFICIAL EXTRAIDA AUTOMATICAMENTE DA LOGO (PDL)\n   [ALERTA CRITICO] A logo possui tipografia/simbolos BRANCOS ou MUITO CLAROS. O cabecalho DEVE ter fundo escuro contrastante para a logo nao desaparecer!\n   ========================================================================== */\n:root {\n  /* Cores de Identidade Visual Extraidas da Marca */\n  --cor-primaria: #CDCEC8;\n  --cor-destaque: #C5A880;\n  \n  /* Cabecalho e Contraste com a Logo */\n  --bg-header: #121820;\n  --cor-nav-link: #FFFFFF;\n  \n  /* Sistema de Superficie e Texto */\n  --cor-fundo-site: #FFFFFF;\n  --cor-texto: #1E293B;\n  --cor-suave: #64748B;\n  --borda: rgba(0, 0, 0, 0.08);\n}\n",
+  "alerta_contraste": "[ALERTA CRITICO] A logo possui tipografia/simbolos BRANCOS ou MUITO CLAROS. O cabecalho DEVE ter fundo escuro contrastante para a logo nao desaparecer!",
+  "logo_recorte": {
+    "input_path": "C:\\Users\\cadu_\\OneDrive\\Área de Trabalho\\C.E. Afonso Soluções Digitais\\PDL\\_PDL_OFICIAL\\04_PROJETOS_CLIENTES\\CE_Afonso_Solucoes_Digitais_Oficial\\output\\assets\\images\\logo\\logo-dark-fundo.png",
+    "output_path": "C:\\Users\\cadu_\\OneDrive\\Área de Trabalho\\C.E. Afonso Soluções Digitais\\PDL\\_PDL_OFICIAL\\04_PROJETOS_CLIENTES\\CE_Afonso_Solucoes_Digitais_Oficial\\output\\assets\\images\\logo\\logo-header.png",
+    "dimensoes_originais": [
+      856,
+      530
+    ],
+    "dimensoes_recortadas": [
+      856,
+      530
+    ],
+    "aspect_ratio_original": 1.62,
+    "aspect_ratio_recortado": 1.62,
+    "fundo_solido_removido": true,
+    "cor_fundo_detectada": "#000000",
+    "largura_estimada_para_height_48px": 78
+  }
+}

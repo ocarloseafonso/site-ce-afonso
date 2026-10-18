@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Inteligência Digital | Página 4 | C.E. Afonso Soluções Digitais</title>
+  <meta name="description" content="Artigos práticos sobre SEO Local, Google Meu Negócio, sites institucionais e posicionamento digital para empresas locais em Volta Redonda e em todo o Brasil.">
+  <meta name="keywords" content="blog marketing digital, SEO local, Google Meu Negócio dicas, posicionamento digital Volta Redonda, Carlos Eduardo Afonso">
+  <link rel="canonical" href="https://www.ceafonso.com.br/blog/pagina-4.html">
+  <meta property="og:title" content="Blog de Inteligência Digital | C.E. Afonso Soluções Digitais">
+  <meta property="og:description" content="Artigos práticos sobre SEO Local, Google Meu Negócio e posicionamento para empresas locais.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ceafonso.com.br/blog.html">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="../assets/images/logo/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css?v=3">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog de Inteligência Digital | C.E. Afonso Soluções Digitais",
+    "description": "Conteúdo estratégico sobre SEO local, Google Meu Negócio e conversão para negócios locais.",
+    "url": "https://www.ceafonso.com.br/blog.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "C.E. Afonso Soluções Digitais",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.ceafonso.com.br/assets/images/logo/logo-alternativa.webp"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* Estilos específicos da página de blog */
+    .page-hero-blog {
+      background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+      padding: 120px 0 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero-blog::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(205,14,69,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .page-hero-blog h1 {
+      color: #FBFDFE !important;
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 16px;
+    }
+
+    .page-hero-blog p {
+      color: rgba(255,255,255,0.82);
+      max-width: 620px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .breadcrumb a { color: rgba(255,255,255,0.55); }
+    .breadcrumb a:hover { color: var(--cor-carmim); }
+    .breadcrumb-sep { color: rgba(205,14,69,0.6); }
+    .breadcrumb-current { color: var(--cor-carmim); }
+
+    .blog-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* Grid de artigos em cards horizontais */
+    .blog-articles-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .blog-card-horizontal {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      background: #FFFFFF;
+      border: 1px solid var(--cor-borda-card);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--sombra-card-artesanal);
+      transition: var(--transicao-suave);
+    }
+
+    .blog-card-horizontal:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--sombra-hover-artesanal);
+      border-color: var(--cor-carmim-borda);
+    }
+
+    .blog-card-horizontal .blog-card-img {
+      width: 280px;
+      height: 100%;
+      min-height: 200px;
+      overflow: hidden;
+    }
+
+    .blog-card-horizontal .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .blog-card-horizontal:hover .blog-card-img img {
+      transform: scale(1.04);
+    }
+
+    .blog-card-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .blog-card-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .blog-card-category {
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--cor-carmim);
+    }
+
+    .blog-card-time {
+      font-size: 0.78rem;
+      color: var(--cor-texto-mutado);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .blog-card-body h3 {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      color: var(--cor-grafite);
+    }
+
+    .blog-card-body h3 a { color: inherit; }
+    .blog-card-body h3 a:hover { color: var(--cor-carmim); }
+
+    .blog-card-body p {
+      font-size: 0.93rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+
+    .blog-card-link {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--cor-carmim);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .blog-card-link:hover { color: var(--cor-carmim-hover); }
+
+    /* Sidebar */
+    .blog-sidebar {
+      position: sticky;
+      top: 110px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .sidebar-widget {
+      background: #FFFFFF;
+      border: 1px solid var(--cor-borda-card);
+      border-radius: 12px;
+      padding: 28px 24px;
+      box-shadow: var(--sombra-card);
+    }
+
+    .sidebar-widget h3 {
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+      color: var(--cor-grafite);
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--cor-carmim);
+    }
+
+    .sidebar-categories {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .sidebar-cat-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: none;
+      border: 1px solid var(--cor-borda-card);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-family: var(--fonte-corpo);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--cor-texto);
+      cursor: pointer;
+      transition: var(--transicao-suave);
+      text-align: left;
+    }
+
+    .sidebar-cat-btn:hover,
+    .sidebar-cat-btn.active {
+      background: var(--cor-carmim-suave);
+      border-color: var(--cor-carmim-borda);
+      color: var(--cor-carmim);
+    }
+
+    .sidebar-cat-count {
+      background: var(--cor-grafite-suave);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--cor-texto-mutado);
+    }
+
+    .sidebar-cat-btn.active .sidebar-cat-count {
+      background: var(--cor-carmim);
+      color: #FFFFFF;
+    }
+
+    .sidebar-cta-widget {
+      background: linear-gradient(135deg, var(--cor-grafite) 0%, #1e1e1e 100%);
+      color: #FFFFFF;
+    }
+
+    .sidebar-cta-widget h3 {
+      color: #FFFFFF !important;
+      border-bottom-color: var(--cor-carmim);
+    }
+
+    .sidebar-cta-widget p {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    /* Paginação */
+    .blog-paginacao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--cor-borda);
+    }
+
+    .paginacao-item {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--cor-borda-card);
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--cor-texto);
+      background: #FFFFFF;
+      cursor: pointer;
+      transition: var(--transicao-suave);
+      text-decoration: none;
+    }
+
+    .paginacao-item:hover,
+    .paginacao-item.ativo {
+      background: var(--cor-carmim);
+      border-color: var(--cor-carmim);
+      color: #FFFFFF;
+    }
+
+    /* Responsivo Blog */
+    @media (max-width: 960px) {
+      .blog-layout {
+        grid-template-columns: 1fr;
+      }
+      .blog-sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .blog-card-horizontal {
+        grid-template-columns: 1fr;
+      }
+      .blog-card-horizontal .blog-card-img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body data-page="blog">
+
+  <div class="barra-progresso" id="barra-progresso" aria-hidden="true"></div>
+
+  <!-- TOPBAR MINIMALISTA -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Volta Redonda, RJ · Atendimento em todo o Brasil</span>
+      </div>
+      <div class="topbar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Segunda a sexta, das 09h às 18h</span>
+      </div>
+      <div class="topbar__item">
+        <a href="https://wa.me/5524999555644?text=Ol%C3%A1%2C%20Carlos%20Eduardo!%20Gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20de%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" class="topbar__link">Falar agora: (24) 99955-5644 &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CABEÇALHO COM SMART SCROLL -->
+  <nav class="cabecalho" id="cabecalho">
+    <div class="container cabecalho__inner">
+      <a href="../index.html" class="logo-link" aria-label="C.E. Afonso Soluções Digitais | Início">
+        <img src="../assets/images/logo/logo-dark-fundo.webp" alt="C.E. Afonso Soluções Digitais" class="cabecalho-logo" width="856" height="530">
+      </a>
+      <div class="nav">
+        <ul class="nav-lista">
+          <li><a href="../index.html" class="nav-link">Início</a></li>
+          <li><a href="../servicos.html" class="nav-link">Serviços</a></li>
+          <li><a href="../sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="../blog.html" class="nav-link ativo">Blog</a></li>
+          <li><a href="../faq.html" class="nav-link">Perguntas</a></li>
+          <li><a href="../contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </div>
+      <div class="cabecalho__cta">
+        <a href="https://wa.me/5524999555644?text=Ol%C3%A1%2C%20Carlos%20Eduardo!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito%20da%20minha%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" class="btn btn-carmim btn-shimmer">Diagnóstico Gratuito</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MENU DRAWER MOBILE -->
+  <div class="nav-mobile-overlay" id="navOverlay"></div>
+  <div class="nav-mobile-drawer" id="navDrawer">
+    <ul class="nav-mobile-lista">
+      <li><a href="../index.html" class="nav-mobile-link">Início</a></li>
+      <li><a href="../servicos.html" class="nav-mobile-link">Serviços</a></li>
+      <li><a href="../sobre.html" class="nav-mobile-link">Sobre</a></li>
+      <li><a href="../blog.html" class="nav-mobile-link">Blog</a></li>
+      <li><a href="../faq.html" class="nav-mobile-link">Perguntas</a></li>
+      <li><a href="../contato.html" class="nav-mobile-link">Contato</a></li>
+    </ul>
+    <div style="margin-top: 24px;">
+      <a href="https://wa.me/5524999555644?text=Ol%C3%A1%2C%20Carlos%20Eduardo!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito%20da%20minha%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+
+<main id="conteudo">
+
+    <!-- HERO DA PÁGINA -->
+    <section class="page-hero-blog">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+          <a href="../index.html">Início</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current">Blog</span>
+        </nav>
+        <h1>Blog de Inteligência Digital</h1>
+        <p>Artigos práticos sobre SEO Local, Google Meu Negócio e posicionamento para empresários que buscam previsibilidade e crescimento real.</p>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO DO BLOG -->
+    <section class="secao">
+      <div class="container">
+        <div class="blog-layout">
+
+          <!-- Coluna Principal: Lista de Artigos -->
+          <main>
+            <div class="blog-articles-list">
+<article class="blog-card-horizontal revelar">
+                <a href="importancia-seo-local.html" class="blog-card-img" aria-label="Leia sobre SEO local como investimento">
+                  <img src="../assets/images/blog/importancia-seo-local.webp" alt="Estrategista digital negro planejando posicionamento local em mesa executiva" width="280" height="200" loading="lazy">
+                </a>
+                <div class="blog-card-body">
+                  <div>
+                    <div class="blog-card-meta-row">
+                      <span class="blog-card-category">SEO Local · Investimento</span>
+                      <span class="blog-card-time">5 min de leitura</span>
+                    </div>
+                    <h3><a href="importancia-seo-local.html">Por que o SEO local é o melhor investimento a longo prazo</a></h3>
+                    <p>Construa um ativo digital sustentável na sua região que gera consultas diárias sem custo por clique.</p>
+                  </div>
+                  <a href="importancia-seo-local.html" class="blog-card-link">Ler artigo completo</a>
+                </div>
+              </article>
+<article class="blog-card-horizontal revelar">
+                <a href="posicionamento-google.html" class="blog-card-img" aria-label="Leia o artigo sobre posicionamento no Google">
+                  <img src="../assets/images/blog/posicionamento-google.webp" alt="Estrategista digital negro analisando rankings no Google" width="280" height="200" loading="lazy">
+                </a>
+                <div class="blog-card-body">
+                  <div>
+                    <div class="blog-card-meta-row">
+                      <span class="blog-card-category">SEO Local</span>
+                      <span class="blog-card-time">5 min de leitura</span>
+                    </div>
+                    <h2 class="blog-card-titulo">
+                      <a href="posicionamento-google.html">Como Aparecer no Topo do Google Sem Pagar por Anúncios</a>
+                    </h2>
+                    <p class="blog-card-resumo">Entenda como o Google avalia a relevância de cada empresa e quais ações técnicas fundamentam uma posição sólida nos resultados de busca.</p>
+                  </div>
+                  <div class="blog-card-footer">
+                    <div class="blog-card-autor">
+                      <img src="../assets/images/hero/carlos-afonso.webp" alt="Carlos Eduardo Afonso" width="32" height="32">
+                      <div>
+                        <strong>Carlos Eduardo Afonso</strong>
+                        <span>Publicado em Out 2026</span>
+                      </div>
+                    </div>
+                    <a href="posicionamento-google.html" class="blog-card-link">
+                      Ler artigo
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+<article class="blog-card-horizontal revelar">
+                <a href="protocolo-destaque-local.html" class="blog-card-img" aria-label="Leia o artigo sobre o Protocolo de Destaque Local">
+                  <img src="../assets/images/blog/protocolo-destaque-local.webp" alt="Consultora e empresário negros em reunião estratégica de marketing digital" width="280" height="200" loading="lazy">
+                </a>
+                <div class="blog-card-body">
+                  <div>
+                    <div class="blog-card-meta-row">
+                      <span class="blog-card-category">Estratégia Digital</span>
+                      <span class="blog-card-time">7 min de leitura</span>
+                    </div>
+                    <h2 class="blog-card-titulo">
+                      <a href="protocolo-destaque-local.html">Protocolo de Destaque Local: O Método que Posiciona Negócios no Google</a>
+                    </h2>
+                    <p class="blog-card-resumo">Conheça o PDL: o sistema estruturado de presença digital desenvolvido para transformar negócios locais em posições de destaque no Google, com foco em relevância duradoura.</p>
+                  </div>
+                  <div class="blog-card-footer">
+                    <div class="blog-card-autor">
+                      <img src="../assets/images/hero/carlos-afonso.webp" alt="Carlos Eduardo Afonso" width="32" height="32">
+                      <div>
+                        <strong>Carlos Eduardo Afonso</strong>
+                        <span>Publicado em Out 2026</span>
+                      </div>
+                    </div>
+                    <a href="protocolo-destaque-local.html" class="blog-card-link">
+                      Ler artigo
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+</div>
+
+<nav class="blog-paginacao" aria-label="Paginação do blog">
+  <a href="pagina-3.html" class="blog-paginacao__btn" aria-label="Página anterior">&larr; Anterior</a>
+  <a href="../blog.html" class="blog-paginacao__btn">1</a>
+  <a href="pagina-2.html" class="blog-paginacao__btn">2</a>
+  <a href="pagina-3.html" class="blog-paginacao__btn">3</a>
+  <span class="blog-paginacao__btn ativo" aria-current="page">4</span>
+  <a href="pagina-5.html" class="blog-paginacao__btn">5</a>
+  <a href="pagina-5.html" class="blog-paginacao__btn" aria-label="Próxima página">Próxima &rarr;</a>
+</nav>
+          </main>
+
+          <!-- Sidebar Lateral -->
+          <aside class="blog-sidebar">
+
+            <div class="sidebar-widget">
+              <h3>Categorias</h3>
+              <div class="sidebar-categories">
+                <button class="sidebar-cat-btn active" type="button">
+                  <span>Todos os artigos</span>
+                  <span class="sidebar-cat-count">10</span>
+                </button>
+                <button class="sidebar-cat-btn" type="button">
+                  <span>SEO Local</span>
+                  <span class="sidebar-cat-count">4</span>
+                </button>
+                <button class="sidebar-cat-btn" type="button">
+                  <span>Google Meu Negócio</span>
+                  <span class="sidebar-cat-count">2</span>
+                </button>
+                <button class="sidebar-cat-btn" type="button">
+                  <span>Protocolo PDL</span>
+                  <span class="sidebar-cat-count">1</span>
+                </button>
+                <button class="sidebar-cat-btn" type="button">
+                  <span>Vendas e Conversão</span>
+                  <span class="sidebar-cat-count">3</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="sidebar-widget sidebar-cta-widget">
+              <h3>Sua empresa invisível no Google?</h3>
+              <p>Descubra os pontos cegos que estão fazendo você perder clientes para concorrentes da sua região.</p>
+              <a href="https://wa.me/5524999555644?text=Ol%C3%A1%2C%20Carlos%20Eduardo!%20Quero%20um%20diagn%C3%B3stico%20gratuito%20da%20minha%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" class="btn btn-carmim btn-shimmer" style="width: 100%;">Solicitar Diagnóstico Gratuito</a>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Sobre o Autor</h3>
+              <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                <img src="../assets/images/sobre/carlos-afonso-rosto.webp" alt="Carlos Eduardo Afonso" style="width:52px; height:52px; border-radius:50%; object-fit:cover; flex-shrink:0; border:2px solid var(--cor-carmim);">
+                <div>
+                  <div style="font-weight:700; font-size:0.95rem; color:var(--cor-grafite);">Carlos Eduardo Afonso</div>
+                  <div style="font-size:0.82rem; color:var(--cor-texto-mutado);">Estrategista de Presença Digital</div>
+                </div>
+              </div>
+              <p style="font-size:0.88rem; line-height:1.6; margin-bottom:14px;">Criador do Protocolo de Destaque Local (PDL). Desde 2019 ajuda empresas locais a ocupar os primeiros resultados do Google em suas cidades.</p>
+              <a href="../sobre.html" style="font-size:0.88rem; font-weight:700; color:var(--cor-carmim);">Conhecer a história completa</a>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="secao secao-alt">
+      <div class="container">
+        <div class="cta-box revelar">
+          <h2>Quer aplicar essas estratégias no seu negócio?</h2>
+          <p>Agende uma conversa direta com Carlos e descubra o plano de ação para posicionar sua empresa no topo das buscas da sua cidade.</p>
+          <div class="cta-box-acoes">
+            <a href="https://wa.me/5524999555644?text=Ol%C3%A1%2C%20Carlos%20Eduardo!%20Li%20o%20blog%20e%20quero%20um%20diagn%C3%B3stico%20da%20minha%20empresa%20no%20Google." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-shimmer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar com Carlos no WhatsApp
+            </a>
+            <a href="../contato.html" class="btn btn-outline-light">Enviar mensagem pelo site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- RODAPÉ INSTITUCIONAL EM 4 COLUNAS -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+
+        <!-- Coluna 1: Identidade da Agência -->
+        <div class="rodape-coluna">
+          <img src="../assets/images/logo/logo-dark-fundo.webp" alt="C.E. Afonso Soluções Digitais" class="rodape-logo" width="856" height="530">
+          <p>Estratégia de posicionamento digital para negócios locais. Demanda ativa e clientes previsíveis no Google e nas inteligências artificiais, em Volta Redonda e em todo o Brasil.</p>
+          <div class="rodape-redes">
+            <a href="https://www.instagram.com/ocarloseafonso" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Carlos Eduardo Afonso">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@ocarloseafonso" target="_blank" rel="noopener noreferrer" aria-label="YouTube de Carlos Eduardo Afonso">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.783zm-13.886 9.401V8.405l6.264 3.6z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/ocarloseafonso" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Carlos Eduardo Afonso">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Serviços -->
+        <div class="rodape-coluna">
+          <h3 class="rodape-titulo">Serviços</h3>
+          <ul class="rodape-lista">
+            <li><a href="../google-meu-negocio.html">Google Meu Negócio</a></li>
+            <li><a href="../gestao-google-meu-negocio.html">Gestão Mensal do Google</a></li>
+            <li><a href="../site-institucional.html">Site Institucional PDL</a></li>
+            <li><a href="../landing-pages.html">Landing Pages</a></li>
+            <li><a href="../mini-site.html">Mini-site e Link da Bio</a></li>
+            <li><a href="../auditoria-presenca-digital.html">Auditoria de Presença Digital</a></li>
+            <li><a href="../pdl.html">Protocolo PDL Completo</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Institucional -->
+        <div class="rodape-coluna">
+          <h3 class="rodape-titulo">Institucional</h3>
+          <ul class="rodape-lista">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../sobre.html">Sobre a Agência</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../faq.html">Perguntas Frequentes</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+            <li><a href="../privacy.html">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contato -->
+        <div class="rodape-coluna">
+          <h3 class="rodape-titulo">Contato</h3>
+          <ul class="rodape-contato">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Vila Santa Cecília, Volta Redonda, RJ</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="3" y="2" width="18" height="20" rx="2"/><path d="M8 10h8M8 14h5"/></svg>
+              <span>CNPJ: 68.894.903/0001-05</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.3a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16c.01.3.01.62 0 .92z"/></svg>
+              <a href="tel:+5524999555644">(24) 99955-5644</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:contato@ceafonso.com.br">contato@ceafonso.com.br</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="rodape-inferior">
+        <p>&copy; 2026 C.E. Afonso Soluções Digitais. CNPJ: 68.894.903/0001-05. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://ceafonso.com.br" target="_blank" rel="noopener noreferrer">C.E. Afonso Soluções Digitais</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTAO FLUTUANTE WHATSAPP (60px / SVG 36px) -->
+  <a href="https://wa.me/5524999555644?text=Ol%C3%A1%2C%20Carlos%20Eduardo!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito%20da%20minha%20presen%C3%A7a%20digital." class="btn-whatsapp-flutuante" aria-label="Falar no WhatsApp com Carlos Eduardo Afonso" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- BANNER LGPD: BARRA INFERIOR COMPLETA -->
+  <div class="aviso-cookies" id="aviso-cookies" role="dialog" aria-label="Aviso de cookies e privacidade">
+    <div class="container aviso-cookies__inner">
+      <p class="aviso-cookies__texto">
+        Utilizamos cookies para melhorar sua experiência e analisar o tráfego do site. Ao continuar navegando, você concorda com nossa
+        <a href="../privacy.html" class="link-privacidade">Política de Privacidade</a>.
+      </p>
+      <div class="aviso-cookies__acoes">
+        <button class="btn btn-carmim btn-sm" id="btn-aceitar-cookies">Aceitar</button>
+        <a href="../privacy.html" class="btn btn-outline-light btn-sm link-privacidade">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL LGPD -->
+  <div class="modal-lgpd" id="modal-lgpd" role="dialog" aria-modal="true" aria-labelledby="modal-lgpd-titulo">
+    <div class="modal-lgpd-card">
+      <button class="modal-lgpd-fechar" aria-label="Fechar modal de privacidade">&times;</button>
+      <h3 id="modal-lgpd-titulo">Política de Privacidade</h3>
+      <p>A C.E. Afonso Soluções Digitais utiliza cookies e tecnologias similares para garantir o funcionamento do site, analisar o tráfego e oferecer uma experiência personalizada.</p>
+      <p>Os dados coletados são utilizados exclusivamente para fins analíticos e de melhoria do serviço. Nunca vendemos ou compartilhamos seus dados com terceiros sem consentimento.</p>
+      <p>Para mais informações, acesse nossa <a href="../privacy.html">Política de Privacidade completa</a>.</p>
+      <div style="margin-top: 20px;">
+        <button class="btn btn-carmim" id="btn-aceitar-lgpd">Aceitar e fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/animacoes.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <style>
+      .bg { fill: #F8FAFC; }
+      .card-base { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1.5; rx: 14px; filter: drop-shadow(0 10px 25px rgba(0,0,0,0.04)); }
+      .card-destaque { fill: #FFFFFF; stroke: #CD0E45; stroke-width: 2; rx: 14px; filter: drop-shadow(0 12px 30px rgba(205,14,69,0.08)); }
+      .header-title { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-size: 26px; font-weight: 800; fill: #121212; }
+      .header-sub { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; font-size: 15px; fill: #64748B; }
+      .pillar-tag { fill: rgba(205, 14, 69, 0.1); rx: 6px; }
+      .pillar-tag-text { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 800; fill: #CD0E45; letter-spacing: 0.08em; }
+      .pillar-title { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-size: 17px; font-weight: 700; fill: #121212; }
+      .pillar-desc { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; font-size: 13px; fill: #475569; line-height: 1.5; }
+      .mock-screen { fill: #F1F5F9; stroke: #CBD5E1; stroke-width: 1; rx: 8px; }
+      .flow-arrow { stroke: #CD0E45; stroke-width: 2.5; stroke-dasharray: 6 6; fill: none; }
+      .arrow-head { fill: #CD0E45; }
+      .star { fill: #F59E0B; }
+      .hub-card { fill: #121212; rx: 16px; filter: drop-shadow(0 15px 35px rgba(0,0,0,0.25)); }
+      .hub-title { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: 800; fill: #FFFFFF; }
+      .hub-desc { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; font-size: 13px; fill: rgba(255,255,255,0.75); }
+      .badge-zap { fill: #25D366; rx: 6px; }
+      .badge-zap-text { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 800; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Fundo suave neutro -->
+  <rect width="1200" height="675" class="bg"/>
+
+  <!-- Título Superior do Infográfico -->
+  <g transform="translate(600, 55)" text-anchor="middle">
+    <text y="0" class="header-title">Arquitetura Integrada do Protocolo de Destaque Local (PDL)</text>
+    <text y="28" class="header-sub">Como a sincronização técnica entre Google Maps, Site Institucional e IAs garante a captação de clientes</text>
+  </g>
+
+  <!-- PILAR 1: GOOGLE MAPS / BUSCA LOCAL -->
+  <g transform="translate(60, 120)">
+    <rect width="320" height="340" class="card-base"/>
+    <rect x="22" y="22" width="105" height="22" class="pillar-tag"/>
+    <text x="74" y="37" text-anchor="middle" class="pillar-tag-text">PILAR 1 · MAPAS</text>
+    <text x="22" y="70" class="pillar-title">Google Meu Negócio</text>
+    <text x="22" y="92" class="pillar-desc">Captura no momento da intenção de busca local</text>
+
+    <!-- Mockup da Ficha -->
+    <g transform="translate(22, 110)">
+      <rect width="276" height="150" class="mock-screen"/>
+      <!-- Pin do mapa e título -->
+      <circle cx="26" cy="30" r="12" fill="#CD0E45"/>
+      <path d="M26 22 A 4 4 0 0 1 30 26 C 30 31 26 35 26 35 C 26 35 22 31 22 26 A 4 4 0 0 1 26 22 Z" fill="#FFFFFF"/>
+      <text x="48" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#121212">Ficha no Top 3 da Cidade</text>
+      <!-- Estrelas -->
+      <g transform="translate(48, 42)">
+        <text x="0" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#B45309">5.0</text>
+        <path d="M26 1 l1.5 3 3.3.5 -2.4 2.3 .6 3.2 -3 -1.6 -3 1.6 .6 -3.2 -2.4 -2.3 3.3 -.5 z" class="star"/>
+        <path d="M38 1 l1.5 3 3.3.5 -2.4 2.3 .6 3.2 -3 -1.6 -3 1.6 .6 -3.2 -2.4 -2.3 3.3 -.5 z" class="star"/>
+        <path d="M50 1 l1.5 3 3.3.5 -2.4 2.3 .6 3.2 -3 -1.6 -3 1.6 .6 -3.2 -2.4 -2.3 3.3 -.5 z" class="star"/>
+        <path d="M62 1 l1.5 3 3.3.5 -2.4 2.3 .6 3.2 -3 -1.6 -3 1.6 .6 -3.2 -2.4 -2.3 3.3 -.5 z" class="star"/>
+        <path d="M74 1 l1.5 3 3.3.5 -2.4 2.3 .6 3.2 -3 -1.6 -3 1.6 .6 -3.2 -2.4 -2.3 3.3 -.5 z" class="star"/>
+      </g>
+      <!-- Dados NAP -->
+      <text x="26" y="78" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#475569">Categorias estratégicas oficiais</text>
+      <text x="26" y="96" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#475569">Endereço e telefone consistentes (NAP)</text>
+      <text x="26" y="114" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#475569">Catálogo de serviços e produtos ativos</text>
+      <rect x="26" y="124" width="80" height="18" fill="#121212" rx="3"/>
+      <text x="66" y="136" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Ver Perfil</text>
+    </g>
+
+    <text x="22" y="295" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#121212">Impacto no Cliente:</text>
+    <text x="22" y="315" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#475569">Gera a confiança inicial e abre a rota para contato.</text>
+  </g>
+
+  <!-- PILAR 2: SITE INSTITUCIONAL / AUTORIDADE -->
+  <g transform="translate(440, 120)">
+    <rect width="320" height="340" class="card-destaque"/>
+    <rect x="22" y="22" width="115" height="22" class="pillar-tag"/>
+    <text x="79" y="37" text-anchor="middle" class="pillar-tag-text">PILAR 2 · AUTORIDADE</text>
+    <text x="22" y="70" class="pillar-title">Site Institucional Próprio</text>
+    <text x="22" y="92" class="pillar-desc">Validação técnica e diferencial competitivo</text>
+
+    <!-- Mockup do Site -->
+    <g transform="translate(22, 110)">
+      <rect width="276" height="150" class="mock-screen"/>
+      <!-- Header do navegador -->
+      <rect x="0" y="0" width="276" height="22" fill="#E2E8F0" rx="8 8 0 0"/>
+      <circle cx="12" cy="11" r="3" fill="#EF4444"/>
+      <circle cx="20" cy="11" r="3" fill="#F59E0B"/>
+      <circle cx="28" cy="11" r="3" fill="#10B981"/>
+      <rect x="42" y="4" width="160" height="14" fill="#FFFFFF" rx="4"/>
+      <text x="50" y="14" font-family="'DM Sans', sans-serif" font-size="8.5" fill="#64748B">suaempresa.com.br</text>
+      <!-- Conteúdo do Site -->
+      <text x="16" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#121212">Sua Marca com Autoridade</text>
+      <text x="16" y="60" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#64748B">Arquitetura semântica rápida no celular</text>
+      <rect x="16" y="72" width="70" height="38" fill="#FFFFFF" stroke="#E2E8F0" rx="4"/>
+      <rect x="94" y="72" width="70" height="38" fill="#FFFFFF" stroke="#E2E8F0" rx="4"/>
+      <rect x="172" y="72" width="70" height="38" fill="#FFFFFF" stroke="#E2E8F0" rx="4"/>
+      <!-- Botão de WhatsApp do Site -->
+      <rect x="16" y="120" width="120" height="20" fill="#25D366" rx="4"/>
+      <text x="76" y="134" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Chamar no WhatsApp</text>
+    </g>
+
+    <text x="22" y="295" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#121212">Impacto no Cliente:</text>
+    <text x="22" y="315" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#475569">Elimina o receio e comprova a melhor escolha.</text>
+  </g>
+
+  <!-- PILAR 3: IA E BUSCA CONVERSACIONAL -->
+  <g transform="translate(820, 120)">
+    <rect width="320" height="340" class="card-base"/>
+    <rect x="22" y="22" width="120" height="22" class="pillar-tag"/>
+    <text x="82" y="37" text-anchor="middle" class="pillar-tag-text">PILAR 3 · IA E DADOS</text>
+    <text x="22" y="70" class="pillar-title">Recomendação por IA</text>
+    <text x="22" y="92" class="pillar-desc">Citação no ChatGPT, Gemini e buscas semânticas</text>
+
+    <!-- Mockup de Resposta por IA -->
+    <g transform="translate(22, 110)">
+      <rect width="276" height="150" class="mock-screen"/>
+      <!-- Prompt de busca da IA -->
+      <rect x="12" y="12" width="252" height="26" fill="#FFFFFF" stroke="#CBD5E1" rx="6"/>
+      <text x="22" y="28" font-family="'DM Sans', sans-serif" font-size="10" fill="#64748B">"Qual é o melhor especialista da região?"</text>
+      <!-- Resposta sintética da IA -->
+      <g transform="translate(12, 48)">
+        <rect width="252" height="88" fill="#FFFFFF" stroke="#E2E8F0" rx="6"/>
+        <text x="12" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#CD0E45">Recomendação Prioritária:</text>
+        <text x="12" y="38" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#334155">"Com base na reputação consolidada no Google</text>
+        <text x="12" y="52" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#334155">e informações técnicas do site oficial, a empresa</text>
+        <text x="12" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#121212">[Sua Marca] é a mais bem avaliada."</text>
+      </g>
+    </g>
+
+    <text x="22" y="295" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#121212">Impacto no Cliente:</text>
+    <text x="22" y="315" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#475569">Sua empresa recomendada onde as pessoas buscam.</text>
+  </g>
+
+  <!-- LINHAS DE FLUXO CONVERGENTES PARA O HUB INFERIOR -->
+  <path d="M 220 460 Q 220 500, 500 530" class="flow-arrow"/>
+  <path d="M 600 460 L 600 520" class="flow-arrow"/>
+  <path d="M 980 460 Q 980 500, 700 530" class="flow-arrow"/>
+
+  <!-- HUB INFERIOR: CONVERSÃO FINAL NO WHATSAPP -->
+  <g transform="translate(280, 530)">
+    <rect width="640" height="110" class="hub-card"/>
+    <g transform="translate(36, 25)">
+      <!-- Ícone WhatsApp -->
+      <circle cx="30" cy="30" r="28" fill="#25D366"/>
+      <path d="M38.5 33.5 c-.4-.2-2.3-1.1-2.6-1.2-.4-.1-.6-.2-.9.2-.3.4-1 1.2-1.2 1.5-.2.3-.5.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.2-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.6.1-.3.1-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7-.2 0-.5 0-.7 0-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.2 0 1.9 1.4 3.7 1.6 4 .2.3 2.7 4.2 6.6 5.8.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.1-.3-.2-.7-.4z" fill="#FFFFFF"/>
+      
+      <text x="76" y="24" class="hub-title">Resultado Concreto: Demanda Ativa Direto no WhatsApp</text>
+      <text x="76" y="44" class="hub-desc">O cliente pesquisa com urgência, compara a sua solidez e clica pronto para contratar.</text>
+      <text x="76" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#F43F5E">Sem leilão de mídia diário · Sem depender de danças ou posts em redes sociais</text>
+    </g>
+  </g>
+</svg>

@@ -236,13 +236,14 @@ strong { color: var(--color-text); font-weight: 700; }
 
 /* --- HERO (Seção 1) --- */
 .lp-hero {
-  margin-top: 70px;
+  margin-top: 0;
+  padding-top: 110px;
   min-height: 92vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: var(--color-bg);
+  background: #0A0A0A;
 }
 
 .lp-hero-bg {
@@ -297,6 +298,7 @@ strong { color: var(--color-text); font-weight: 700; }
 
 /* --- SECTIONS BASE --- */
 .lp-section {
+  background-color: var(--color-bg);
   padding: 100px 0;
   position: relative;
 }
@@ -340,7 +342,8 @@ strong { color: var(--color-text); font-weight: 700; }
 }
 
 @media (max-width: 768px) {
-  .lp-section { padding: 72px 0; }
+  .lp-section {
+  background-color: var(--color-bg); padding: 72px 0; }
 }
 
 /* --- SEÇÃO 2: AGITAÇÃO DO PROBLEMA --- */
